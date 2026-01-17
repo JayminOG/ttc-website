@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+}
+:root {
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+   font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  /* font-family: Montserrat; */
+
+  /* Theme colors */
+  --primary-color: rgba(35, 26, 28, 1);
+  --black-color: #1E1E1E;
+  --white-color:#FFFFFF;
+  --secondary-color: #4caf50;
+  --red-color: #B91E1E;
+  --blue-color: #141E78;
+  --gray-color: #797979;
+
+
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: var(--background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+background-color: var(--white-color);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.bg-black{
+  background-color: var(--black-color) !important;
+}
+.bg-white{
+  background-color: var(--white-color) !important;
+}
+.bg-red{
+  background-color: var(--red-color) !important;
+}
+.bg-blue{
+  background-color: var(--blue-color) !important;
+}
+.bg-gray{
+  background-color: var(--gray-color) !important;
+}
+.text-black{
+  color: var(--black-color)!important;
+}
+.text-white{
+  color: var(--white-color)!important;
+}
+.text-red{
+  color: var(--red-color)!important;
+}
+.text-blue{
+  color: var(--blue-color)!important;
+}
+.text-gray{
+  color: var(--gray-color)!important;
+}
+
+.border-red{
+  border: 1px solid var(--red-color)!important;
+}
+
+
+@keyframes scrollSlow {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scrollSlow {
+  width: max-content;
+  animation: scrollSlow 26s linear infinite;
+}
+
+.pause-scroll:hover {
+  animation-play-state: paused;
+}
+
+
+

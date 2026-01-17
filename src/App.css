@@ -1,0 +1,88 @@
+/* Custom styles for GreenAge Industries */
+
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Container for consistent spacing */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply animation to main content */
+main {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Custom utility classes */
+.text-green-primary {
+  color: var(--secondary-color);
+}
+
+.bg-green-primary {
+  background-color: var(--secondary-color);
+}
+
+/* Menu hover styles */
+.menu-item-hover {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.menu-item-hover:hover {
+  color: var(--menu-hover-text);
+  background: linear-gradient(to right, var(--menu-hover-gradient-start), var(--menu-hover-gradient-end));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-item-hover:hover::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  background: linear-gradient(to right, var(--menu-hover-gradient-start), var(--menu-hover-gradient-end));
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+/* Mobile menu toggle button */
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
