@@ -138,13 +138,19 @@ const Hero = () => {
                 >
                   {/* STAT BOXES */}
                   {[
-                    { label: "Years of Experience", value: 25 },
-                    { label: "2015 Certified", value: 9001 },
-                    { label: "Customized", value: 1000 },
+                    { label: "Years of Experience", value: 25, isNumber: true },
+                    { label: "2015 Certified", value: "ISO 9001", isNumber: false },
+                    { label: "Solutions", value: "Customized", isNumber: false },
                   ].map((stat, index) => (
                     <div key={index} className="flex flex-col items-start">
                       <h2 className="text-2xl sm:text-3xl font-bold text-black">
-                        <CountUp end={stat.value} duration={3} separator="," />+
+                        {stat.isNumber ? (
+                          <>
+                            <CountUp end={stat.value} duration={3} separator="," />+
+                          </>
+                        ) : (
+                          stat.value
+                        )}
                       </h2>
                       <p className="text-gray text-sm mt-1">{stat.label}</p>
                     </div>
