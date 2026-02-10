@@ -23,6 +23,10 @@ const Header = () => {
   const [openProducts, setOpenProducts] = useState(false);
   const [openBrands, setOpenBrands] = useState(false);
 
+  // Mobile submenu states
+  const [expandedCategory, setExpandedCategory] = useState(null);
+  const [expandedSubCategory, setExpandedSubCategory] = useState(null);
+
   const dropdownTimeoutRef = useRef(null);
 
   // ================= DESKTOP HOVER =================
@@ -46,6 +50,30 @@ const Header = () => {
         setOpenBrands(false);
       }
     }, 200);
+  };
+
+  const toggleCategory = (categoryName) => {
+    if (expandedCategory === categoryName) {
+      setExpandedCategory(null);
+      setExpandedSubCategory(null);
+    } else {
+      setExpandedCategory(categoryName);
+      setExpandedSubCategory(null);
+    }
+  };
+
+  const toggleSubCategory = (subCategoryName) => {
+    setExpandedSubCategory(
+      expandedSubCategory === subCategoryName ? null : subCategoryName
+    );
+  };
+
+  const handleMobileMenuClose = () => {
+    setMenuOpen(false);
+    setOpenProducts(false);
+    setOpenBrands(false);
+    setExpandedCategory(null);
+    setExpandedSubCategory(null);
   };
 
   const menu = [
@@ -152,9 +180,7 @@ const Header = () => {
                   key={item.to}
                   to={item.to}
                   className={({ isActive }) =>
-                    isActive
-                      ? "text-[#B91E1E]"
-                      : "hover:text-[#B91E1E]"
+                    isActive ? "text-[#B91E1E]" : "hover:text-[#B91E1E]"
                   }
                 >
                   {item.label}
@@ -164,54 +190,148 @@ const Header = () => {
           </nav>
         </div>
 
-        <Button text="Get A Quote" onClick={() => (window.location.href = "/")} />
+        <Button
+          text="Get A Quote"
+          onClick={() => (window.location.href = "/")}
+        />
       </header>
 
       {/* ================= MOBILE OVERLAY ================= */}
       {menuOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-[999]"
-          onClick={() => setMenuOpen(false)}
+          onClick={handleMobileMenuClose}
         />
       )}
 
       {/* ================= MOBILE MENU ================= */}
       <div
-        className={`fixed top-0 left-0 w-full bg-white z-[1000] p-6 transition-all duration-500 ${
+        className={`fixed top-0 left-0 w-full max-h-screen overflow-y-auto bg-white z-[1000] p-6 transition-all duration-500 ${
           menuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
         <button
           className="absolute top-4 right-4"
-          onClick={() => setMenuOpen(false)}
+          onClick={handleMobileMenuClose}
         >
           <IoMdClose size={30} />
         </button>
 
-        <nav className="flex flex-col gap-5 text-lg ">
+        <nav className="flex flex-col gap-5 text-lg mt-8">
           {menu.map((item) =>
             item.label === "Products" ? (
               <div key={item.label}>
                 <div
-                  className="flex justify-between"
+                  className="flex justify-between items-center cursor-pointer"
                   onClick={() => {
                     setOpenProducts(!openProducts);
                     setOpenBrands(false);
+                    if (openProducts) {
+                      setExpandedCategory(null);
+                      setExpandedSubCategory(null);
+                    }
                   }}
                 >
-                  Products <IoIosArrowDown />
+                  <span>Products</span>
+                  <IoIosArrowDown
+                    className={`transition-transform ${
+                      openProducts ? "rotate-180" : ""
+                    }`}
+                  />
                 </div>
 
                 {openProducts && (
-                  <div className="ml-4 mt-2 flex flex-col gap-2">
-                    {categories.map((c, i) => (
-                      <NavLink
-                        key={i}
-                        to={c.url}
-                        onClick={() => setMenuOpen(false)}
-                      >
-                        {c.name}
-                      </NavLink>
+                  <div className="ml-4 mt-3 flex flex-col gap-3">
+                    {categories.map((category, i) => (
+                      <div key={i}>
+                        {/* Category with submenus */}
+                        {category.subCategories &&
+                        category.subCategories.length > 0 ? (
+                          <div>
+                            <div
+                              className="flex justify-between items-center cursor-pointer text-base py-1"
+                              onClick={() => toggleCategory(category.name)}
+                            >
+                              <span>{category.name}</span>
+                              <IoIosArrowDown
+                                className={`transition-transform ${
+                                  expandedCategory === category.name
+                                    ? "rotate-180"
+                                    : ""
+                                }`}
+                                size={16}
+                              />
+                            </div>
+
+                            {/* Subcategories */}
+                            {expandedCategory === category.name && (
+                              <div className="ml-4 mt-2 flex flex-col gap-2">
+                                {category.subCategories.map((subCat, j) => (
+                                  <div key={j}>
+                                    {/* Subcategory with items */}
+                                    {subCat.items && subCat.items.length > 0 ? (
+                                      <div>
+                                        <div
+                                          className="flex justify-between items-center cursor-pointer text-sm py-1"
+                                          onClick={() =>
+                                            toggleSubCategory(subCat.name)
+                                          }
+                                        >
+                                          <span>{subCat.name}</span>
+                                          <IoIosArrowDown
+                                            className={`transition-transform ${
+                                              expandedSubCategory ===
+                                              subCat.name
+                                                ? "rotate-180"
+                                                : ""
+                                            }`}
+                                            size={14}
+                                          />
+                                        </div>
+
+                                        {/* Items */}
+                                        {expandedSubCategory ===
+                                          subCat.name && (
+                                          <div className="ml-4 mt-2 flex flex-col gap-1">
+                                            {subCat.items.map((item, k) => (
+                                              <NavLink
+                                                key={k}
+                                                to={item.url}
+                                                onClick={handleMobileMenuClose}
+                                                className="text-sm text-gray-700 hover:text-[#B91E1E] py-1"
+                                              >
+                                               {item.name}
+                                              </NavLink>
+                                            ))}
+                                          </div>
+                                        )}
+                                      </div>
+                                    ) : (
+                                      // Simple subcategory link
+                                      <NavLink
+                                        to={subCat.url}
+                                        onClick={handleMobileMenuClose}
+                                        className="text-sm text-gray-700 hover:text-[#B91E1E] py-1 block"
+                                      >
+                                        {subCat.name}
+                                      </NavLink>
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        ) : (
+                          // Category without submenus
+                          <NavLink
+                            to={category.url}
+                            onClick={handleMobileMenuClose}
+                            className="text-base hover:text-[#B91E1E] block py-1"
+                          >
+                            {category.name}
+                          </NavLink>
+                        )}
+                      </div>
                     ))}
                   </div>
                 )}
@@ -219,13 +339,20 @@ const Header = () => {
             ) : item.label === "Brands" ? (
               <div key={item.label}>
                 <div
-                  className="flex justify-between"
+                  className="flex justify-between items-center cursor-pointer"
                   onClick={() => {
                     setOpenBrands(!openBrands);
                     setOpenProducts(false);
+                    setExpandedCategory(null);
+                    setExpandedSubCategory(null);
                   }}
                 >
-                  Brands <IoIosArrowDown />
+                  <span>Brands</span>
+                  <IoIosArrowDown
+                    className={`transition-transform ${
+                      openBrands ? "rotate-180" : ""
+                    }`}
+                  />
                 </div>
 
                 {openBrands && (
@@ -234,7 +361,8 @@ const Header = () => {
                       <NavLink
                         key={i}
                         to={b.url}
-                        onClick={() => setMenuOpen(false)}
+                        onClick={handleMobileMenuClose}
+                        className="hover:text-[#B91E1E]"
                       >
                         {b.name}
                       </NavLink>
@@ -246,7 +374,10 @@ const Header = () => {
               <NavLink
                 key={item.to}
                 to={item.to}
-                onClick={() => setMenuOpen(false)}
+                onClick={handleMobileMenuClose}
+                className={({ isActive }) =>
+                  isActive ? "text-[#B91E1E]" : "hover:text-[#B91E1E]"
+                }
               >
                 {item.label}
               </NavLink>
