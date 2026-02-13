@@ -134,7 +134,7 @@ const BrandDetailSection = ({
                     variants={fadeUp}
                     className="text-base sm:text-lg font-semibold text-gray-900 mb-2 sm:mb-3"
                   >
-                    Applications Surfaces
+                   Product Information  {/* Applications Surfaces */}
                   </motion.h4>
 
                   <motion.div
@@ -160,7 +160,7 @@ const BrandDetailSection = ({
               className="relative"
             >
               {logo && (
-                <div className="absolute -top-12 sm:-top-16 lg:-top-24 left-4 sm:left-6 rounded-xl z-10">
+                <div className="absolute -top-12 sm:-top-16 lg:-top-20 left-4 sm:left-6 rounded-xl z-10">
                   <img src={logo} alt="logo" className="h-30 object-contain" />
                 </div>
               )}

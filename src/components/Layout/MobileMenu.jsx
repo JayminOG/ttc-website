@@ -26,13 +26,52 @@ const categories = [
       },
     ],
   },
+  // {
+  //   name: "Bakeware",
+  //   url: "/products/bakeware",
+  // },
   {
     name: "Bakeware",
     url: "/products/bakeware",
+    subCategories: [
+      {
+        name: "Houseware",
+        items: [
+          { name: "Protectix (1 LAYER)", url: "/Brands/protectixone" },
+        ],
+      },
+      {
+        name: "Industrial",
+        items: [
+          { name: "Protectix+ (2 LAYER)", url: "/brands/protectix-plus" },
+          { name: "Shieldon+ (3 LAYER)", url: "/brands/shieldon-plus" },
+          { name: "PFA POWDER", url: "/brands/pfapowders" },
+        ],
+      },
+    ],
   },
+  // {
+  //   name: "Electrical Appliances",
+  //   url: "/products/electrical-appliances",
+  // },
   {
     name: "Electrical Appliances",
     url: "/products/electrical-appliances",
+    subCategories: [
+      {
+        name: "PTFE NON-STICK",
+        items: [
+          { name: "Protectix (1 LAYER)", url: "/Brands/protectixone" },
+          { name: "Protectix+ (2 LAYER)", url: "/brands/protectix-plus" },
+        ],
+      },
+      {
+        name: "CERAMIC NON-STICK",
+        items: [
+          { name: "CERAGREEN", url: "/brands/ceragreen" },
+        ],
+      },
+    ],
   },
   {
     name: "Roller Coatings",
@@ -40,7 +79,7 @@ const categories = [
     subCategories: [
       {
         name: "Stonshild",
-        url: "/products/roller-coatings/stonshild",
+        url: "/brands/stonshild",
       },
     ],
   },
@@ -50,11 +89,11 @@ const categories = [
     subCategories: [
       {
         name: "Soft Touch Coatings",
-        url: "/products/decorative-coatings/soft-touch",
+        url: "/products/soft-touch-coatings",
       },
       {
         name: "Cookware Exterior",
-        url: "/products/decorative-coatings/cookware-exterior",
+        url: "/products/cookware-exterior",
       },
     ],
   },
@@ -68,15 +107,15 @@ const categories = [
     subCategories: [
       {
         name: "Plastic",
-        url: "/products/uv-led-coatings/plastic",
+        url: "/products/plastic",
       },
       {
         name: "Wood / SPC / PVC / PMMA",
-        url: "/products/uv-led-coatings/wood",
+        url: "/products/wood-spc-pvc-pmma",
       },
       {
         name: "Metal",
-        url: "/products/uv-led-coatings/metal",
+        url: "/products/metal",
       },
     ],
   },

@@ -15,20 +15,23 @@ const ShieldonPlus = () => {
       <BrandDetailSection
         heading="SHIELDON™+"
         BrandHeading="The Ultimate 3-Layer Non-Stick Coating Experience"
-        description="Formulated with revolutionary high-performance fluoropolymers, SHIELDON™+ delivers outstanding release properties and exceptional thermal shock resistance, even under extreme cooking temperatures. Enhanced with robust nano-metal particle reinforcement, it creates a tough, resilient surface that offers superior resistance to scratching, abrasion, and wear. This advanced reinforcement technology significantly extends the lifespan of the coating, making it the ideal choice for premium cookware applications."
+        description="SHIELDON™+ represents the highest standard in non-stick coating technology with robust nano-metal particle reinforcement, premium 3-layer coating system engineered for exceptional non-stick performance and long-lasting durability. Designed for excellence, this advanced solution sets a new benchmark in cookware performance and making it ideal for premium cookware applications."
         //  description2="Formulated with revolutionary high-performance fluoropolymers, SHIELDON™+ delivers outstanding release properties and exceptional thermal shock resistance, even under extreme cooking temperatures. This ensures consistent performance, safety, and coating integrity over prolonged and intensive use."
         //  description3="Enhanced with robust nano-metal particle reinforcement, SHIELDON™+ creates a tough, resilient surface that offers superior resistance to scratching, abrasion, and wear. The advanced reinforcement technology significantly extends the lifespan of the coating, making it ideal for premium cookware applications."
         benefits={[
-          "Exceptional Non-Stick Properties: Ultra-smooth food release for superior cooking and effortless cleaning.",
-          "Advanced 3-Layer Coating Technology: Multi-layer protection engineered for maximum durability and longevity.",
-          "Nano-Metal Reinforcement: Ensures superior scratch resistance and long-term surface strength.",
-          "High-Performance Fluoropolymer System: Provides excellent heat resistance and thermal shock stability.",
-          "Premium Durability: Designed for intensive, long-term use without compromise."
+          "Remarkable Non-Stick Properties",
+          "High-Performance Fluoropolymer System",
+          "Nano-Metal Reinforcement",
+          "Premium, Long-Lasting Durability",
         ]}
         applications={[
-          "Rolled / Forged / Cast Aluminium",
-          "Stainless Steel",
-          "Premium Cookware",
+          "Number of Layers - 3 Coat",
+          "Material – PTFE",
+          "Non-stick effect – 6 star",
+          "Abrasion – 20k+",
+          "Coatings thickness -",
+          "Colors – various colors option available",
+          "Substrate – Aluminium - Rolled/Forged/Cast –  Steel",
         ]}
         image={productImg}
         logo={protectixLogo}

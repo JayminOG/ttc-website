@@ -15,17 +15,22 @@ const Protectix = () => {
       <BrandDetailSection
         heading="PROTECTIX™"
         BrandHeading="Reliable 2-Layers Non-Stick Coating Solutions"
-        description="PROTECTIX™ is a specialized 2-layer non-stick coating system designed to deliver excellent performance at an affordable cost, without compromising on quality or reliability. It is the smart choice for manufacturers seeking dependable coating performance for entry-level and mass-market cookware products."
+        description="PROTECTIX™ is a 2-layers non-stick coating system designed to deliver excellent performance at an affordable cost, without compromising on quality or reliability. PROTECTIX™ offers an ideal balance between performance, durability, and cost efficiency."
         benefits={[
-          "Outstanding Non-Stick Performance: Provides smooth release and consistent cooking results with very good non-stick properties.",
-          "Cost-Effective Solution: Designed to deliver high-quality finishes at an affordable price point, making it perfect for value-conscious markets.",
-          "Two-Layer Coating Technology: Ensures enhanced adhesion, improved surface durability, and reliable performance over extended use.",
-          "Consistent Quality Finish: Delivers uniform coating appearance and reliable surface protection.",
+          "Outstanding Non-Stick Performance",
+          "Cost-Effective Solution",
+          "Two-Layer Coating Technology",
+          "Ideal for Entry-Level Cookware",
+          "Consistent Quality Finish",
         ]}
         applications={[
-          "Rolled Aluminium",
-          "Forged Aluminium",
-          "Cast Aluminium",
+          "Number of Layers - 2 Coat",
+          "Material – PTFE",
+          "Non-stick effect – 4 star",
+          "Abrasion – 05k+",
+          "Coatings thickness - ",
+          "Colors – Black",
+          "Substrate – Aluminium - Rolled/Forged/Cast",
         ]}
         image={productImg}
         logo={protectixLogo}

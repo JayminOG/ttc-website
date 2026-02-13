@@ -76,17 +76,23 @@ const AboutIntroSection = ({ hidden }) => {
 
           {/* PARAGRAPH 1 */}
           <motion.p variants={smoothFadeUp} className="text-gray mt-5 leading-relaxed">
-            Founded with a vision to deliver performance-driven and reliable surface technologies, we are committed to meeting the evolving demands of modern manufacturing. Our primary specialization lies in high-performance non-stick and ceramic coatings for cookware, bakeware, and electrical appliances.
+            TTC is a dynamic and innovative startup specializing in cutting-edge coating solutions across a wide range of industries. Founded with a vision to deliver performance-driven and reliable surface technologies, TTC is committed to meeting the evolving demands of modern manufacturing.
           </motion.p>
 
           {/* PARAGRAPH 2 */}
           <motion.p variants={smoothFadeUp} className="text-gray mt-5 leading-relaxed">
-            These solutions are engineered to deliver superior release, durability, heat resistance, and consistent performance, helping manufacturers enhance product quality and operational efficiency. Beyond these core applications, we offer a comprehensive range of industrial solutions, including UV/LED curable coatings for wood, plastics, and metals.
+            Our primary focus lies in providing high-performance non-stick coatings and ceramic coatings for cookware, bakeware, and electrical appliances. These solutions are engineered to deliver superior release, durability, heat resistance, and consistent performance—helping manufacturers enhance product quality and operational efficiency.
+In addition to our core expertise, TTC offers a comprehensive range of industrial coatings, including UV/LED curable coatings for wood, plastics, and metals. We also specialize in customized and application-specific coating solutions, tailored to address unique industrial challenges across diverse sectors.
           </motion.p>
 
           {/* PARAGRAPH 3 */}
           <motion.p variants={smoothFadeUp} className="text-gray mt-5 leading-relaxed">
-            Quality, innovation, and customer satisfaction are embedded in every stage of our operations. We combine advanced technology with deep industry insight to build long-term partnerships and deliver coating solutions that perform beyond expectations.
+            TTC is an ISO 9001:2015 certified company, reflecting our strong commitment to quality management, process consistency, and continual improvement. Quality, innovation, and customer satisfaction are embedded in every stage of our operations.
+          </motion.p>
+
+          {/* PARAGRAPH 4 */}
+          <motion.p variants={smoothFadeUp} className="text-gray mt-5 leading-relaxed">
+            At TTC, we combine advanced technology with deep industry insight to build long-term partnerships and deliver coating solutions that perform beyond expectations.
           </motion.p>
 
           {/* BUTTON */}

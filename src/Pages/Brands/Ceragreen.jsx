@@ -15,18 +15,19 @@ const Ceragreen = () => {
       <BrandDetailSection
         heading="CERAGREEN"
         BrandHeading="Next-Gen Ceramic Non-Stick Coatings"
-        description="Developed using advanced sol-gel technology with nano-particle formation, CERAGREEN™ creates a tough, multi-layer ceramic structure that protects surfaces while delivering next-level non-stick release. The nano-ceramic matrix forms a highly durable and heat-resistant coating, ensuring excellent surface protection and effortless cleaning. Uniquely, CERAGREEN™ is completely PFAS-free and non-toxic, making it a safe, environmentally responsible choice that meets modern health and sustainability standards."
+        description="CERAGREEN™ is a premium ceramic non-stick coating designed for cookware, bakeware, and electrical appliances. Developed using advanced sol-gel technology with nano-particle formation, CERAGREEN™ creates a tough, multi-layer ceramic structure that protects surfaces while delivering next-level non-stick release and long-lasting performance."
         benefits={[
-          "Advanced Ceramic Non-Stick Performance: Superior food release with smooth cooking and easy cleanup.",
-          "Sol-Gel Nano-Particle Technology: Creates tough, protective layers for extended coating life.",
-          "PFAS-Free & Non-Toxic: Safe for food contact and eco-friendly manufacturing.",
-          "High Thermal & Wear Resistance: Performs reliably under high temperatures and heavy use.",
-          "Premium Surface Protection: Enhances durability while maintaining non-stick efficiency.",
+          "Advanced Ceramic Non-Stick Performance",
+          "PFAS-Free & Non-Toxic",
+          "Premium, Long-Lasting Durability",
         ]}
         applications={[
-          "High-end Cookware",
-          "Bakeware Products",
-          "Premium Electrical Appliances",
+          "Material – Ceramic Sol-gel",
+          "Non-stick effect – 3 star",
+          "Abrasion – 05k+",
+          "Coatings thickness -",
+          "Colors – various colors option available",
+          "Substrate – Aluminium – Rolled/Forged/Cast – Stainless Steel",
         ]}
         image={productImg}
         logo={protectixLogo}

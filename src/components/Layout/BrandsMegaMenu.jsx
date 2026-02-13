@@ -6,7 +6,9 @@ export const brands = [
   { name: "PROTECTIX™+", url: "/brands/protectix-plus" },
   { name: "SHIELDON™", url: "/brands/shieldon" },
   { name: "SHIELDON™+", url: "/brands/shieldon-plus" },
+  { name: "STONSHILD", url: "/brands/stonshild" },
   { name: "CERAGREEN", url: "/brands/ceragreen" },
+  { name: "CERATOUGH", url: "/brands/ceratough" },
 ];
 
 const BrandsMegaMenu = () => {

@@ -24,6 +24,13 @@ import ElectricalAppliance from "./Pages/Product/ElectricalAppliance";
 import SpecialtyCoatings from "./Pages/Product/SpecialtyCoatings";
 import UVCoatings from "./Pages/Product/UVCoatings";
 import IndustrialCoatings from "./Pages/Product/IndustrialCoatings";
+import SoftTouchCoatings from "./Pages/Product/SoftTouchCoatings";
+import CookwareExterior from "./Pages/Product/CookwareExterior";
+import BottleCoatings from "./Pages/Product/BottleCoatings";
+import Plastic from "./Pages/Product/Plastic";
+import WoodSpcPvcPmma from "./Pages/Product/WoodSpcPvcPmma";
+import Metal from "./Pages/Product/Metal";
+import SpecialityCoatings from "./Pages/Product/SpecialityCoatings";
 
 // BRAND PAGES
 import BrandPage from "./Pages/Brands";
@@ -32,6 +39,10 @@ import Shieldon from "./Pages/Brands/Shieldon";
 import ShieldonPlus from "./Pages/Brands/ShieldonPlus";
 import Ceragreen from "./Pages/Brands/Ceragreen";
 import Protectix from "./Pages/Brands/Protectix";
+import STONSHILD from "./Pages/Brands/stonshild";
+import Ceratough from "./Pages/Brands/Ceratough";
+import Protectixone from "./Pages/Brands/Protectixone";
+import PfaPowder from "./Pages/Brands/PfaPowder";
 
 
 function App() {
@@ -57,6 +68,13 @@ function App() {
             <Route path="specialty-coatings" element={<SpecialtyCoatings />} />
             <Route path="uv-coatings" element={<UVCoatings />} />
             <Route path="industrial-coatings" element={<IndustrialCoatings />} />
+            <Route path="soft-touch-coatings" element={<SoftTouchCoatings />} />
+            <Route path="cookware-exterior" element={<CookwareExterior />} />
+            <Route path="bottle-coatings" element={<BottleCoatings />} />
+            <Route path="plastic" element={<Plastic />} />
+            <Route path="wood-spc-pvc-pmma" element={<WoodSpcPvcPmma />} />
+            <Route path="metal" element={<Metal />} />
+            <Route path="speciality-coatings" element={<SpecialityCoatings />} />
 
           </Route>
 
@@ -68,6 +86,10 @@ function App() {
             <Route path="shieldon" element={<Shieldon />} />
             <Route path="shieldon-plus" element={<ShieldonPlus />} />
             <Route path="ceragreen" element={<Ceragreen />} />
+            <Route path="stonshild" element={<STONSHILD />} />
+            <Route path="ceratough" element={<Ceratough />} />
+            <Route path="protectixone" element={<Protectixone />} />
+            <Route path="pfapowder" element={<PfaPowder />} />
           </Route>
 
           {/* OTHER PAGES */}

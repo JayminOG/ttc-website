@@ -17,11 +17,11 @@ const AboutUsPage = () => {
       <div className="container">
         <AboutIntroSection hidden={true} />
       </div>
-      <MissionVisionSection />
-      <CoreValues />
+      {/* <MissionVisionSection /> */}
+      {/* <CoreValues /> */}
       <ConnectWithTeam />
       <div className="container">
-        <WhyChooseUs />
+        {/* <WhyChooseUs /> */}
       </div>
     </main>
   );

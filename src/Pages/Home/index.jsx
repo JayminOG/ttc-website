@@ -39,9 +39,9 @@ const Home = () => {
     <main>
       <Hero />
 
-      <div className="container">
+      {/* <div className="container">
         <AboutIntroSection hidden={false} />
-      </div>
+      </div> */}
 
       <ProductsSection />
 
@@ -53,14 +53,14 @@ const Home = () => {
       </div>
 
       <BrandLogoSection />
-      <div className="container">
+      {/* <div className="container">
         <FAQSection faqData={faqData} buttonText="View More" />
-      </div>
+      </div> */}
       <ConnectWithTeam />
 
-      <div className="container">
+      {/* <div className="container">
         <LatestBlogsSection />
-      </div>
+      </div> */}
 
       <ScrollToTop />
     </main>

@@ -10,28 +10,67 @@ export const categories = [
       {
         name: "PTFE Non-Stick",
         items: [
-          { name: "Protectix (2 Layer)", url: "/products/cookware/ptfe/protectix" },
-          { name: "Protectix+ (2 Layer)", url: "/products/cookware/ptfe/protectix-plus" },
-          { name: "Shieldon (3 Layer)", url: "/products/cookware/ptfe/shieldon" },
-          { name: "Shieldon+ (3 Layer)", url: "/products/cookware/ptfe/shieldon-plus" },
+          { name: "Protectix (2 Layer)", url: "/Brands/Protectix" },
+          { name: "Protectix+ (2 Layer)", url: "/brands/protectix-plus" },
+          { name: "Shieldon (3 Layer)", url: "/Brands/Shieldon" },
+          { name: "Shieldon+ (3 Layer)", url: "/brands/shieldon-plus" },
         ],
       },
       {
         name: "Ceramic Non-Stick",
         items: [
-          { name: "Ceragreen", url: "/products/cookware/ceramic/ceragreen" },
+          { name: "Ceragreen", url: "/brands/ceragreen" },
           { name: "Ceratough", url: "/products/cookware/ceramic/ceratough" },
         ],
       },
     ],
   },
+  // {
+  //   name: "Bakeware",
+  //   url: "/products/bakeware",
+  // },
   {
     name: "Bakeware",
     url: "/products/bakeware",
+    subCategories: [
+      {
+        name: "Houseware",
+        items: [
+          { name: "Protectix (1 LAYER)", url: "/Brands/protectixone" },
+        ],
+      },
+      {
+        name: "Industrial",
+        items: [
+          { name: "Protectix+ (2 LAYER)", url: "/brands/protectix-plus" },
+          { name: "Shieldon+ (3 LAYER)", url: "/brands/shieldon-plus" },
+          { name: "PFA POWDER", url: "/brands/pfapowder" },
+        ],
+      },
+    ],
   },
+  // {
+  //   name: "Electrical Appliances",
+  //   url: "/products/electrical-appliances",
+  // },
   {
     name: "Electrical Appliances",
     url: "/products/electrical-appliances",
+    subCategories: [
+      {
+        name: "PTFE NON-STICK",
+        items: [
+          { name: "Protectix (1 LAYER)", url: "/Brands/protectixone" },
+          { name: "Protectix+ (2 LAYER)", url: "/brands/protectix-plus" },
+        ],
+      },
+      {
+        name: "CERAMIC NON-STICK",
+        items: [
+          { name: "CERAGREEN", url: "/brands/ceragreen" },
+        ],
+      },
+    ],
   },
   {
     name: "Roller Coatings",
@@ -39,7 +78,7 @@ export const categories = [
     subCategories: [
       {
         name: "Stonshild",
-        url: "/products/roller-coatings/stonshild",
+        url: "/brands/stonshild",
       },
     ],
   },
@@ -49,11 +88,11 @@ export const categories = [
     subCategories: [
       {
         name: "Soft Touch Coatings",
-        url: "/products/decorative-coatings/soft-touch",
+        url: "/products/soft-touch-coatings",
       },
       {
         name: "Cookware Exterior",
-        url: "/products/decorative-coatings/cookware-exterior",
+        url: "/products/cookware-exterior",
       },
     ],
   },
@@ -67,15 +106,15 @@ export const categories = [
     subCategories: [
       {
         name: "Plastic",
-        url: "/products/uv-led-coatings/plastic",
+        url: "/products/plastic",
       },
       {
         name: "Wood / SPC / PVC / PMMA",
-        url: "/products/uv-led-coatings/wood",
+        url: "/products/wood-spc-pvc-pmma",
       },
       {
         name: "Metal",
-        url: "/products/uv-led-coatings/metal",
+        url: "/products/metal",
       },
     ],
   },
@@ -127,20 +166,33 @@ const ProductsMegaMenu = () => {
         }`}
       >
         {categories.map((item, i) => (
-          <div
-            key={i}
-            onMouseEnter={() => handleCategoryHover(item.name)}
-            className={`flex justify-between items-center px-3 py-2.5 text-[17px] cursor-pointer transition-colors rounded-md ${
-              activeCategory === item.name
-                ? "text-[#B91E1E] font-semibold bg-red-50"
-                : "text-gray-700 hover:bg-gray-50"
-            }`}
-          >
-            <span>{item.name}</span>
-            {item.subCategories && item.subCategories.length > 0 && (
+          item.subCategories && item.subCategories.length > 0 ? (
+            <div
+              key={i}
+              onMouseEnter={() => handleCategoryHover(item.name)}
+              className={`flex justify-between items-center px-3 py-2.5 text-[17px] cursor-pointer transition-colors rounded-md ${
+                activeCategory === item.name
+                  ? "text-[#B91E1E] font-semibold bg-red-50"
+                  : "text-gray-700 hover:bg-gray-50"
+              }`}
+            >
+              <span>{item.name}</span>
               <span className="text-gray-400">→</span>
-            )}
-          </div>
+            </div>
+          ) : (
+            <Link
+              key={i}
+              to={item.url}
+              onMouseEnter={() => handleCategoryHover(item.name)}
+              className={`flex justify-between items-center px-3 py-2.5 text-[17px] cursor-pointer transition-colors rounded-md ${
+                activeCategory === item.name
+                  ? "text-[#B91E1E] font-semibold bg-red-50"
+                  : "text-gray-700 hover:bg-gray-50"
+              }`}
+            >
+              <span>{item.name}</span>
+            </Link>
+          )
         ))}
       </div>
 
