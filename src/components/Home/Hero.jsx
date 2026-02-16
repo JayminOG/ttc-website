@@ -97,7 +97,7 @@ const Hero = () => {
                 >
                   <Button
                     text="Get A Quote"
-                    onClick={() => (window.location.href = "/")}
+                    onClick={() => (window.location.href = "/contact")}
                   />
 
                   <motion.button

@@ -98,7 +98,7 @@ In addition to our core expertise, TTC offers a comprehensive range of industria
           {/* BUTTON */}
           {!hidden && (
             <motion.div variants={smoothFadeUp} className="pt-5">
-              <Button text="Get A Quote" onClick={() => (window.location.href = "/")} />
+              <Button text="Get A Quote" onClick={() => (window.location.href = "/contact")} />
             </motion.div>
           )}
 

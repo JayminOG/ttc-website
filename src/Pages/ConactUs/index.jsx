@@ -15,10 +15,10 @@ const ContactUsPage = () => {
       <div className="container">
         <ContactForm />
       </div>
-      <TestimonialsSlider />
-      <div className="container">
-        <LatestBlogsSection />
-      </div>
+      {/* <TestimonialsSlider /> */}
+      {/* <div className="container"> */}
+        {/* <LatestBlogsSection /> */}
+      {/* </div> */}
     </main>
   )
 }
