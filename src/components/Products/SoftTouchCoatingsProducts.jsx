@@ -22,9 +22,13 @@ const SoftTouchCoatingsProducts = () => {
           TTC also provides customized coating solutions tailored to specific performance and design requirements, adding significant value and an enhanced consumer experience.
         </>
       ),
-    //   tableData: [
-    //     { name: "Reduces torque variation & prevents seizing", brand: "PTFE-Based ultra-low friction", coat: "Excellent chemical and corrosion resistance" },
-    //   ],
+      benefits: [
+        "Non-slip, anti-scratch surface",
+        "Improved hand comfort and ergonomic feel",
+        "Heat and chemical resistance",
+        "Excellent adhesion on plastic substrates",
+        "Long-lasting aesthetic",
+      ],
       reverse: false,
     },
   ];
@@ -34,7 +38,7 @@ const SoftTouchCoatingsProducts = () => {
       <div className="pb-20">
         <TitleHeading
           tag="Our Products"
-          heading="Industrial Coatings: Protection for Harsh Environments"
+          heading="SOFT-TOUCH COATINGS"
           align="center"
           text="text-black"
         />

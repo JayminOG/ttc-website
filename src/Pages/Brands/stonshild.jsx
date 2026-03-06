@@ -8,13 +8,13 @@ const stonshild = () => {
   return (
     <main className="pt-0">
       <HeroSection
-        title="Advanced 3-Layer Non-Stick Coating System"
+        title="Non-stick Roller Coatings"
         tag="STONSHILD™"
         description="STONSHILD™ delivers an exceptional balance of reliable performance, excellent non-stick properties, and long-lasting durability for demanding kitchens."
       />
       <BrandDetailSection
         heading="STONSHILD™"
-        BrandHeading="Advanced 3-Layer Non-Stick Coating System"
+        BrandHeading="Non-stick Roller Coatings"
         description="STONSHILD™ is advanced roller based non-stick coating for interior and exterior cookware. Engineered to outperform conventional systems, it delivers exceptional durability, good abrasion resistance, and long-lasting non-stick performance—even under demanding cooking conditions.
 Built on advanced multi-pass roller coating technology, STONSHILD™ ensures precise micron-level film control, uniform coverage, and consistent surface quality. "
         //  description2="Developed with advanced fluoropolymer resin reinforcement, SHIELDON™ features an additional coating layer that significantly improves abrasion resistance, adhesion, and overall durability. This multi-layer structure ensures smoother cooking, consistent food release, and effortless cleaning even with regular use."

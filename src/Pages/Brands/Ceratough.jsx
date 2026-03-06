@@ -8,13 +8,13 @@ const ceratough = () => {
   return (
     <main className="pt-0">
       <HeroSection
-        title="Advanced 3-Layer Non-Stick Coating System"
+        title="Re-invented Ceramic Coatings"
         tag="CERATOUGH™"
         description="CERATOUGH™ represents the next evolution beyond CERAGREEN™—an ultra-premium ceramic non-stick coating engineered for extreme durability, superior abrasion resistance, and long-lasting non-stick performance. Developed using advanced Nano Sol-Gel Reinforced Technology, CERATOUGH™ delivers exceptional surface strength while maintaining smooth, consistent food release."
       />
       <BrandDetailSection
         heading="CERATOUGH™"
-        BrandHeading="Advanced 3-Layer Non-Stick Coating System"
+        BrandHeading="Re-invented Ceramic Coatings"
         description="CERATOUGH™ represents the next evolution beyond CERAGREEN™—an ultra-premium ceramic non-stick coating engineered for extreme durability, superior abrasion resistance, and long-lasting non-stick performance. Developed using advanced Nano Sol-Gel Reinforced Technology, CERATOUGH™ delivers exceptional surface strength while maintaining smooth, consistent food release."
         //  description2="Developed with advanced fluoropolymer resin reinforcement, SHIELDON™ features an additional coating layer that significantly improves abrasion resistance, adhesion, and overall durability. This multi-layer structure ensures smoother cooking, consistent food release, and effortless cleaning even with regular use."
         //  description3="SHIELDON™ 3-Layer Coatings elevate cookware performance by combining advanced material technology with multi-layer protection—delivering a durable, high-quality non-stick solution built to last."

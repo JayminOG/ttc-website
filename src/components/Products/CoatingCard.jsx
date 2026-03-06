@@ -6,6 +6,7 @@ const CoatingCard = ({
   image,
   title,
   description,
+  benefits,
   tableData,
   reverse,
 }) => {
@@ -65,6 +66,21 @@ const CoatingCard = ({
           <p className="text-gray leading-relaxed mb-6">
             {description}
           </p>
+
+          {/* KEY BENEFITS */}
+          {benefits && benefits.length > 0 && (
+            <div className="mb-6">
+              <h3 className="text-base font-semibold text-black mb-3">Key Benefits</h3>
+              <ul className="space-y-2">
+                {benefits.map((b, i) => (
+                  <li key={i} className="flex items-start gap-2 text-gray text-sm">
+                    <span className="mt-1.5 w-2 h-2 rounded-full bg-black flex-shrink-0"></span>
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {/* TABLE */}
           {tableData && tableData.length > 0 && (

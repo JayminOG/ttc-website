@@ -8,7 +8,7 @@ const SoftTouchCoatings = () => {
       <HeroSection
         title="SOFT TOUCH COATINGS"
         tag="SOFT TOUCH COATINGS"
-        description="Engineering reliability for the modern home. From rice cookers to sandwich makers, our coatings ensure consistent heat transfer and effortless release."
+        description="Premium velvety finish coating designed for all kind of plastic surfaces and metal surfaces, offering enhanced grip, velvet feel, scratch resistance."
       />
       <SoftTouchCoatingsProducts/>
     </main>

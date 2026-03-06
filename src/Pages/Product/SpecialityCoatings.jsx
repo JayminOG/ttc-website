@@ -6,9 +6,9 @@ const SpecialityCoatings = () => {
   return (
     <main className="pt-0">
       <HeroSection
-        title="ANTI-FINGERPRINT COATINGS FOR METAL & PLASTIC"
+        title="SPECIALITY COATINGS"
         tag="SPECIALITY COATINGS"
-        description="Engineering reliability for the modern home. From rice cookers to sandwich makers, our coatings ensure consistent heat transfer and effortless release."
+        // description="Engineering reliability for the modern home. From rice cookers to sandwich makers, our coatings ensure consistent heat transfer and effortless release."
       />
       <SpecialityCoatingsProducts/>
     </main>

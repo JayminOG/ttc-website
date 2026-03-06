@@ -39,7 +39,7 @@ const SpecialityCoatingsProducts = () => {
     {
       number: 2,
       image: img1,
-      title: "ANTI-FINGERPRINT COATINGS FOR METAL & PLASTIC",
+      title: "ANTI-GRAFFITY COATINGS FOR METAL & PLASTIC",
       description: (
         <>
           TTC’s Anti-Graffiti Coatings are engineered to protect metal and plastic surfaces from unwanted stains, markings, paints, inks, and graffiti damage. The advanced protective layer prevents strong adhesion of graffiti materials, allowing stains and marks to be easily removed without damaging the substrate or affecting the original finish. The coating preserves surface aesthetics while significantly reducing maintenance time and cleaning costs. Designed for high-exposure and public-facing applications, TTC anti-graffiti coatings ensure long-lasting cleanliness, durability, and visual consistency, even in harsh environments.

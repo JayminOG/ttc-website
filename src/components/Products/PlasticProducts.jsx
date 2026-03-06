@@ -123,7 +123,7 @@ const PlasticProducts = () => {
       <div className="pb-20">
         <TitleHeading
           tag="Our Products"
-          heading="PLASTIC"
+          heading="UV & LED Curable Topcoats"
           align="center"
           text="text-black"
         />

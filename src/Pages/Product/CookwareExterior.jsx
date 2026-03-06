@@ -8,7 +8,7 @@ const CookwareExterior = () => {
       <HeroSection
         title="COOKWARE EXTERIOR"
         tag="COOKWARE EXTERIOR"
-        description="Engineering reliability for the modern home. From rice cookers to sandwich makers, our coatings ensure consistent heat transfer and effortless release."
+        description="High-performance protective coatings for the outer surface of cookware, providing excellent heat resistance, scratch durability, color stability, and an attractive long-lasting finish."
       />
       <CookwareExteriorProducts/>
     </main>

@@ -8,7 +8,7 @@ const WoodSpcPvcPmma = () => {
       <HeroSection
         title="WOOD/SPC/PVC/PMMA"
         tag="PLASTIC"
-        description="Engineering reliability for the modern home. From rice cookers to sandwich makers, our coatings ensure consistent heat transfer and effortless release."
+        // description="Engineering reliability for the modern home. From rice cookers to sandwich makers, our coatings ensure consistent heat transfer and effortless release."
       />
       <WoodSpcPvcPmmaProducts/>
     </main>

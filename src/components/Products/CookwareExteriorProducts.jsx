@@ -22,6 +22,15 @@ const CookwareExteriorProducts = () => {
     //   tableData: [
     //     { name: "Reduces torque variation & prevents seizing", brand: "PTFE-Based ultra-low friction", coat: "Excellent chemical and corrosion resistance" },
     //   ],
+    benefits: [
+        "High heat and scratch resistance",
+        "Strong adhesion on aluminum and stainless steel",
+        "Good chemical and detergent resistance",
+        "Superior color retention and gloss stability",
+        "Smooth, uniform finish",
+        "Available in matte, semi-gloss, and high-gloss options",
+        "Suitable for spray or roller application"
+      ],
       reverse: false,
     },
   ];
@@ -31,7 +40,7 @@ const CookwareExteriorProducts = () => {
       <div className="pb-20">
         <TitleHeading
           tag="Our Products"
-          heading="Industrial Coatings: Protection for Harsh Environments"
+          heading="COOKWARE EXTERIOR(HTR) COATINGS"
           align="center"
           text="text-black"
         />

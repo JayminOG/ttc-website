@@ -25,6 +25,15 @@ const BottleCoatingsProducts = () => {
     //   tableData: [
     //     { name: "Reduces torque variation & prevents seizing", brand: "PTFE-Based ultra-low friction", coat: "Excellent chemical and corrosion resistance" },
     //   ],
+      benefits: [
+        "Strong adhesion on stainless steel",
+        "High scratch and abrasion resistance",
+        "Excellent corrosion and moisture resistance",
+        "Food-contact safe compliant formulations",
+        "Superior color retention",
+        "Smooth matte, gloss, or textured finish options",
+        "Suitable for spray application",
+      ],
       reverse: false,
     },
   ];
@@ -34,7 +43,7 @@ const BottleCoatingsProducts = () => {
       <div className="pb-20">
         <TitleHeading
           tag="Our Products"
-          heading="SS WATER BOTTLE COATINGS"
+          heading="COATINGS FOR SS WATER BOTTLE"
           align="center"
           text="text-black"
         />

@@ -8,7 +8,7 @@ const Plastic = () => {
       <HeroSection
         title="UV & LED Curable Topcoats"
         tag="PLASTIC"
-        description="Engineering reliability for the modern home. From rice cookers to sandwich makers, our coatings ensure consistent heat transfer and effortless release."
+        // description="Engineering reliability for the modern home. From rice cookers to sandwich makers, our coatings ensure consistent heat transfer and effortless release."
       />
       <PlasticProducts/>
     </main>

@@ -32,7 +32,7 @@ const WoodSpcPvcPmmaProducts = () => {
     {
       number: 2,
       image: img1,
-      title: "UV Curable Coatings for Floorings",
+      title: "UV Coatings top coat for Acrylic/PMMA/PETG/PVC surfaces",
       description: (
         <>
           WOODEN FLOORINGS : UV coated wood flooring means the wood has a finish that's been cured by UV light. It's not just a surface coat — it's a super-durable, scratch-resistant finish that’s dried instantly by UV lamps instead of air-drying like traditional finishes.
