@@ -20,7 +20,7 @@ export const categories = [
         name: "Ceramic Non-Stick",
         items: [
           { name: "Ceragreen", url: "/brands/ceragreen" },
-          { name: "Ceratough", url: "/products/cookware/ceramic/ceratough" },
+          { name: "Ceratough", url: "/brands/Ceratough" },
         ],
       },
     ],

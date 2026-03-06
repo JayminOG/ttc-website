@@ -8,13 +8,13 @@ const ShieldonPlus = () => {
   return (
     <main className="pt-0">
       <HeroSection
-        title="The Ultimate 3-Layer Non-Stick Coating Experience"
+        title="3-Layer Premium Non-stick Coatings"
         tag="SHIELDON™+"
         description="SHIELDON™+ represents the highest standard in non-stick technology, a premium 3-layer system engineered for exceptional performance and long-lasting durability."
       />
       <BrandDetailSection
         heading="SHIELDON™+"
-        BrandHeading="The Ultimate 3-Layer Non-Stick Coating Experience"
+        BrandHeading="3-Layer Premium Non-stick Coatings"
         description="SHIELDON™+ represents the highest standard in non-stick coating technology with robust nano-metal particle reinforcement, premium 3-layer coating system engineered for exceptional non-stick performance and long-lasting durability. Designed for excellence, this advanced solution sets a new benchmark in cookware performance and making it ideal for premium cookware applications."
         //  description2="Formulated with revolutionary high-performance fluoropolymers, SHIELDON™+ delivers outstanding release properties and exceptional thermal shock resistance, even under extreme cooking temperatures. This ensures consistent performance, safety, and coating integrity over prolonged and intensive use."
         //  description3="Enhanced with robust nano-metal particle reinforcement, SHIELDON™+ creates a tough, resilient surface that offers superior resistance to scratching, abrasion, and wear. The advanced reinforcement technology significantly extends the lifespan of the coating, making it ideal for premium cookware applications."

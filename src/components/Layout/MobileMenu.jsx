@@ -11,17 +11,17 @@ const categories = [
       {
         name: "PTFE Non-Stick",
         items: [
-          { name: "Protectix (2 Layer)", url: "/products/cookware/ptfe/protectix" },
-          { name: "Protectix+ (2 Layer)", url: "/products/cookware/ptfe/protectix-plus" },
-          { name: "Shieldon (3 Layer)", url: "/products/cookware/ptfe/shieldon" },
-          { name: "Shieldon+ (3 Layer)", url: "/products/cookware/ptfe/shieldon-plus" },
+          { name: "Protectix (2 Layer)", url: "/Brands/Protectix" },
+          { name: "Protectix+ (2 Layer)", url: "/brands/protectix-plus" },
+          { name: "Shieldon (3 Layer)", url: "/Brands/Shieldon" },
+          { name: "Shieldon+ (3 Layer)", url: "/brands/shieldon-plus" },
         ],
       },
       {
         name: "Ceramic Non-Stick",
         items: [
-          { name: "Ceragreen", url: "/products/cookware/ceramic/ceragreen" },
-          { name: "Ceratough", url: "/products/cookware/ceramic/ceratough" },
+          { name: "Ceragreen", url: "/brands/ceragreen" },
+          { name: "Ceratough", url: "/brands/Ceratough" },
         ],
       },
     ],

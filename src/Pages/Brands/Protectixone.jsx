@@ -8,13 +8,13 @@ const Protectixone = () => {
   return (
     <main className="pt-0">
       <HeroSection
-        title="Reliable 1-Layers Non-Stick Coating Solutions"
-        tag="Protectix"
+        title="1-Layer Non-stick Coatings"
+        tag="PROTECTIX™"
         description="PROTECTIX™ is a 1-layer non-stick coating system developed specifically for daily home use bakeware applications. Based on advanced silicone–polyester coating technology, it delivers excellent non-stick release, making it ideal for baking molds for cookies, bread, cakes, muffins, and desserts."
       />
       <BrandDetailSection
         heading="PROTECTIX™"
-        BrandHeading="Reliable 1-Layers Non-Stick Coating Solutions"
+        BrandHeading="1-Layer Non-stick Coatings"
         description="PROTECTIX™ is a 1-layer non-stick coating system developed specifically for daily home use bakeware applications. Based on advanced silicone–polyester coating technology, it delivers excellent non-stick release, making it ideal for baking molds for cookies, bread, cakes, muffins, and desserts."
         benefits={[
           "Excellent Non-Stick Release",
