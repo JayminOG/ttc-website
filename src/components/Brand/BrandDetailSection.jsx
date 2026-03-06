@@ -137,19 +137,20 @@ const BrandDetailSection = ({
                    Product Information  {/* Applications Surfaces */}
                   </motion.h4>
 
-                  <motion.div
+                  <motion.ul
                     variants={fadeUp}
-                    className="flex flex-wrap gap-2 sm:gap-3 bg-[#F7F8FE] rounded-lg p-2 sm:p-3"
+                    className="bg-[#F7F8FE] rounded-lg p-2 sm:p-3 flex flex-col"
                   >
                     {applications.map((app, index) => (
-                      <span
+                      <li
                         key={index}
-                        className="px-3 sm:px-4 py-1.5 sm:py-2 text-black font-semibold"
+                        className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 text-black font-semibold"
                       >
-                        {index + 1}. {app}
-                      </span>
+                        <span className="w-2 h-2 rounded-full bg-black inline-block flex-shrink-0"></span>
+                        {app}
+                      </li>
                     ))}
-                  </motion.div>
+                  </motion.ul>
                 </>
               )}
             </motion.div>

@@ -96,7 +96,7 @@ const Header = () => {
             <span className="border border-white w-8 h-8 rounded-full flex justify-center items-center">
               <img src={Gmail} className="w-4" />
             </span>
-            <p>garry@empathy-technologies.com</p>
+            <p>info@ttcpl.com</p>
           </div>
 
           <span className="h-6 w-[1px] bg-gray"></span>

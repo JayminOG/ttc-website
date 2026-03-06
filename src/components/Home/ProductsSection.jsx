@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import cookware from "../../../public/products/cookware.png";
 import bakeware from "../../../public/products/bakeware.png";
@@ -10,26 +11,38 @@ import uvled from "../../../public/products/uvled.png";
 import specialty from "../../../public/products/specialty.png";
 
 const products = [
-  { id: 1, img: cookware, title: "COOKWARE", link: "/products/cookware" },
-  { id: 2, img: bakeware, title: "BAKEWARE", link: "/products/bakeware" },
-  { id: 3, img: electrical, title: "ELECTRICAL APPLIANCES", link: "/products/electrical" },
-  { id: 4, img: roller, title: "ROLLER COATINGS", link: "/products/roller" },
-  { id: 5, img: decorative, title: "DECORATIVE COATINGS", link: "/products/decorative" },
-  { id: 6, img: bottle, title: "BOTTLE COATINGS", link: "/products/bottle" },
-  { id: 7, img: uvled, title: "UV/LED CURABLE COATINGS", link: "/products/uvled" },
-  { id: 8, img: specialty, title: "SPECIALITY COATINGS", link: "/products/specialty" },
+  { id: 1, img: cookware, title: "COOKWARE"},
+  { id: 2, img: bakeware, title: "BAKEWARE"},
+  { id: 3, img: electrical, title: "ELECTRICAL APPLIANCES"},
+  { id: 4, img: roller, title: "ROLLER COATINGS"},
+  { id: 5, img: decorative, title: "DECORATIVE COATINGS"},
+  { id: 6, img: bottle, title: "BOTTLE COATINGS"},
+  { id: 7, img: uvled, title: "UV/LED CURABLE COATINGS"},
+  { id: 8, img: specialty, title: "SPECIALITY COATINGS"},
 ];
 
 const ProductsSection = () => {
+  const navigate = useNavigate();
+
   const handleCardClick = (link) => {
-    // You can use React Router's useNavigate hook or window.location
-    window.location.href = link;
-    // Or with React Router: navigate(link);
+    if (link) navigate(link);
   };
 
   return (
     <section className="py-20 w-full flex justify-center bg-white">
       <div className="max-w-7xl w-full px-6">
+        {/* INTRO TEXT SECTION */}
+        <div className="text-center mb-12">
+          <h2 className="text-black text-[28px] md:text-[36px] font-bold uppercase tracking-wide mb-4">
+            The Complete Coating Solution For Every Surface
+          </h2>
+          <p className="text-gray-500 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+            TTC is a dynamic innovation hub specializing in next-generation coating solutions.<br />
+            Our foundation is built on deep industry insight and a vision to redefine performance standards.<br />
+            We specialize in high-performance coatings solutions for every application like cookware, bakeware,
+            electrical appliances, automotive, wood, decorative furniture and tailored coatings solutions.
+          </p>
+        </div>
         {/* HEADING */}
         <h2 className="text-center text-black text-[32px] md:text-[40px] font-bold mb-14 uppercase tracking-wide">
           Coating Products For All Application
@@ -41,8 +54,7 @@ const ProductsSection = () => {
             <div
               key={item.id}
               onClick={() => handleCardClick(item.link)}
-              className="group relative h-44 rounded-xl overflow-hidden 
-              transition-all duration-300 hover:scale-105 cursor-pointer"
+              className={`group relative h-44 rounded-xl overflow-hidden transition-all duration-300 hover:scale-105${item.link ? " cursor-pointer" : ""}`}
             >
               {/* IMAGE */}
               <img

@@ -8,13 +8,13 @@ const Protectix = () => {
   return (
     <main className="pt-0">
       <HeroSection
-        title="Reliable 2-Layers Non-Stick Coating Solutions"
-        tag="Protectix"
+        title="2-Layer Ultimate Non-stick Coatings"
+        tag="PROTECTIX™"
         description="Engineered for value-driven applications, PROTECTIX™ offers an ideal balance between performance, durability, and cost efficiency."
       />
       <BrandDetailSection
         heading="PROTECTIX™"
-        BrandHeading="Reliable 2-Layers Non-Stick Coating Solutions"
+        BrandHeading="2-Layer Ultimate Non-stick Coatings"
         description="PROTECTIX™ is a 2-layers non-stick coating system designed to deliver excellent performance at an affordable cost, without compromising on quality or reliability. PROTECTIX™ offers an ideal balance between performance, durability, and cost efficiency."
         benefits={[
           "Outstanding Non-Stick Performance",
