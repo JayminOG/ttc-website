@@ -1,6 +1,7 @@
 import React from "react";
 import { HeroSection } from "../../components/UI";
 import BottleCoatingsProducts from "../../components/Products/BottleCoatingsProducts";
+const Heroimg = "/products/BOTTLECOATINGS.png";
 
 const BottleCoatings = () => {
   return (
@@ -9,6 +10,7 @@ const BottleCoatings = () => {
         title="BOTTLE COATINGS"
         tag="BOTTLE COATINGS"
         description="Specially developed protective and decorative coatings for stainless steel water bottles, offering excellent adhesion, scratch resistance, and long-lasting color performance."
+        image={Heroimg}
       />
       <BottleCoatingsProducts/>
     </main>

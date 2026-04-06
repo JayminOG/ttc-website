@@ -3,6 +3,7 @@ import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 import productImg from "../../../public/brands/shieldonPlus.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
+const Heroimg = "/brands/Shieldon+.png";
 
 const ShieldonPlus = () => {
   return (
@@ -11,6 +12,7 @@ const ShieldonPlus = () => {
         title="3-Layer Premium Non-stick Coatings"
         tag="SHIELDON™+"
         description="SHIELDON™+ represents the highest standard in non-stick technology, a premium 3-layer system engineered for exceptional performance and long-lasting durability."
+        image={Heroimg}
       />
       <BrandDetailSection
         heading="SHIELDON™+"

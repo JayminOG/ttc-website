@@ -3,6 +3,7 @@ import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 import productImg from "../../../public/brands/protectix.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
+const Heroimg = "/brands/Protectix(1LAYER).png";
 
 const Protectixone = () => {
   return (
@@ -11,6 +12,7 @@ const Protectixone = () => {
         title="1-Layer Non-stick Coatings"
         tag="PROTECTIX™"
         description="PROTECTIX™ is a 1-layer non-stick coating system developed specifically for daily home use bakeware applications. Based on advanced silicone–polyester coating technology, it delivers excellent non-stick release, making it ideal for baking molds for cookies, bread, cakes, muffins, and desserts."
+        image={Heroimg}
       />
       <BrandDetailSection
         heading="PROTECTIX™"

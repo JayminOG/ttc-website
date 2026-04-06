@@ -3,6 +3,7 @@ import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 import productImg from "../../../public/brands/stonshild.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
+const Heroimg = "/brands/STONSHILD1.png";
 
 const stonshild = () => {
   return (
@@ -11,6 +12,7 @@ const stonshild = () => {
         title="Non-stick Roller Coatings"
         tag="STONSHILD™"
         description="STONSHILD™ delivers an exceptional balance of reliable performance, excellent non-stick properties, and long-lasting durability for demanding kitchens."
+        image={Heroimg}
       />
       <BrandDetailSection
         heading="STONSHILD™"

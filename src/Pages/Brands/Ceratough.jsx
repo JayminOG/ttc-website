@@ -3,6 +3,7 @@ import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 import productImg from "../../../public/brands/ceratough.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
+const Heroimg = "/brands/CERATOUGH1.png";
 
 const ceratough = () => {
   return (
@@ -11,6 +12,7 @@ const ceratough = () => {
         title="Re-invented Ceramic Coatings"
         tag="CERATOUGH™"
         description="CERATOUGH™ represents the next evolution beyond CERAGREEN™—an ultra-premium ceramic non-stick coating engineered for extreme durability, superior abrasion resistance, and long-lasting non-stick performance. Developed using advanced Nano Sol-Gel Reinforced Technology, CERATOUGH™ delivers exceptional surface strength while maintaining smooth, consistent food release."
+        image={Heroimg}
       />
       <BrandDetailSection
         heading="CERATOUGH™"

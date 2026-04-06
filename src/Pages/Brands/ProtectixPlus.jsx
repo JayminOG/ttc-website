@@ -3,6 +3,7 @@ import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 import productImg from "../../../public/brands/protectixPlus.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
+const Heroimg = "/brands/Protectix+.png";
 
 const ProtectixPlus = () => {
   return (
@@ -11,6 +12,7 @@ const ProtectixPlus = () => {
         title="2-Layer Premium Non-stick Coatings"
         tag="PROTECTIX™+"
         description="PROTECTIX™+ offers the perfect balance of excellent non-stick performance, abrasion resistance, and long-lasting durability."
+        image={Heroimg}
       />
       <BrandDetailSection
       heading="PROTECTIX™ +"

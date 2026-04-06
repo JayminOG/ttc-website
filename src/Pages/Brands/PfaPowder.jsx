@@ -3,6 +3,7 @@ import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 import productImg from "../../../public/brands/protectixPlus.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
+const Heroimg = "/brands/PFAPOWDER1.png";
 
 const PfaPowder = () => {
   return (
@@ -11,6 +12,7 @@ const PfaPowder = () => {
         title="Enhanced Performance. Proven Durability."
         tag="PFA POWDER"
         description="TTC’s industrial-grade bakeware coating systems are engineered to deliver long-lasting non-stick release even under rough handling and demanding production conditions. Designed for commercial and industrial baking applications, the system uses a reinforced liquid primer that chemically crosslinks with high-performance PFA powder topcoats, creating a strong, wear-resistant coating structure."
+        image={Heroimg}
       />
       <BrandDetailSection
       heading="PFA POWDER"

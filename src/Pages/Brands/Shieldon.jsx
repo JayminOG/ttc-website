@@ -3,6 +3,7 @@ import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 import productImg from "../../../public/brands/shieldon.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
+const Heroimg = "/brands/Shieldon1.png";
 
 const Shieldon = () => {
   return (
@@ -11,6 +12,7 @@ const Shieldon = () => {
         title="3-Layer Ultimate Non-stick Coatings"
         tag="SHIELDON™"
         description="SHIELDON™ delivers an exceptional balance of reliable performance, excellent non-stick properties, and long-lasting durability for demanding kitchens."
+        image={Heroimg}
       />
       <BrandDetailSection
         heading="SHIELDON™"

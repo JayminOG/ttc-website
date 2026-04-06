@@ -3,6 +3,7 @@ import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 import productImg from "../../../public/brands/ceragreen.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
+const Heroimg = "/brands/CERAGREEN1.png";
 
 const Ceragreen = () => {
   return (
@@ -11,6 +12,7 @@ const Ceragreen = () => {
         title="Next-Gen Ceramic Non-Stick Coatings"
         tag="CERAGREEN™"
         description="CERAGREEN™ combines advanced sol-gel technology with eco-friendly safety, delivering a premium non-stick solution for modern cookware and appliances."
+        image={Heroimg}
       />
       <BrandDetailSection
         heading="CERAGREEN™"
