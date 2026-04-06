@@ -1,8 +1,9 @@
 import React from "react";
 import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
-import productImg from "../../../public/brands/protectix.png";
-import protectixLogo from "../../../public/brands/protectixLogo.png";
+const productImg = "/brands/protectix.png";
+const protectixLogo = "/brands/protectixLogo.png";
+const Heroimg = "/about/protectix1.png";
 
 const Protectix = () => {
   return (
@@ -11,6 +12,7 @@ const Protectix = () => {
         title="2-Layer Ultimate Non-stick Coatings"
         tag="PROTECTIX™"
         description="Engineered for value-driven applications, PROTECTIX™ offers an ideal balance between performance, durability, and cost efficiency."
+        image={Heroimg}
       />
       <BrandDetailSection
         heading="PROTECTIX™"
