@@ -15,7 +15,7 @@ const stonshild = () => {
       <BrandDetailSection
         heading="STONSHILD™"
         BrandHeading="Non-stick Roller Coatings"
-        description="STONSHILD™ is advanced roller based non-stick coating for interior and exterior cookware. Engineered to outperform conventional systems, it delivers exceptional durability, good abrasion resistance, and long-lasting non-stick performance—even under demanding cooking conditions.
+        description="STONSHILD™ is advanced roller based non-stick coating for interior cookware. Engineered to outperform conventional systems, it delivers exceptional durability, good abrasion resistance, and long-lasting non-stick performance—even under demanding cooking conditions.
 Built on advanced multi-pass roller coating technology, STONSHILD™ ensures precise micron-level film control, uniform coverage, and consistent surface quality. "
         //  description2="Developed with advanced fluoropolymer resin reinforcement, SHIELDON™ features an additional coating layer that significantly improves abrasion resistance, adhesion, and overall durability. This multi-layer structure ensures smoother cooking, consistent food release, and effortless cleaning even with regular use."
         //  description3="SHIELDON™ 3-Layer Coatings elevate cookware performance by combining advanced material technology with multi-layer protection—delivering a durable, high-quality non-stick solution built to last."
@@ -27,7 +27,7 @@ Built on advanced multi-pass roller coating technology, STONSHILD™ ensures pre
           "Premium, Long-Lasting Durability",
         ]}
         applications={[
-          "Material – PTFE/Silicon",
+          "Material – PTFE",
           "Non-stick effect – 5 star",
           "Abrasion – 05k+",
           "Coatings thickness -",

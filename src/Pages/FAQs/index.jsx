@@ -44,7 +44,7 @@ const FAQs = () => {
     {
       question: "What is UV/LED Curing and why should I use it?",
       answer:
-        "UV/LED curing (our NextG-UV line) is a rapid-drying technology that cures coatings instantly using light. This significantly speeds up production lines, reduces energy consumption, and lowers VOC emissions compared to traditional oven-dried coatings.",
+        "UV/LED curing (our NextG-UV line) is a rapid-drying technology that cures coatings instantly using UV/LED lights. This significantly speeds up production lines, reduces energy consumption, Cost-effective with performance enhancement and lowers VOC emissions compared to traditional oven-dried coatings.",
     },
 
   ];

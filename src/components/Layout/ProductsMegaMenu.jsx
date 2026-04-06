@@ -10,17 +10,23 @@ export const categories = [
       {
         name: "PTFE Non-Stick",
         items: [
-          { name: "Protectix (2 Layer)", url: "/Brands/Protectix" },
-          { name: "Protectix+ (2 Layer)", url: "/brands/protectix-plus" },
-          { name: "Shieldon (3 Layer)", url: "/Brands/Shieldon" },
-          { name: "Shieldon+ (3 Layer)", url: "/brands/shieldon-plus" },
+          { name: "PROTECTIX", url: "/Brands/Protectix" },
+          { name: "PROTECTIX+", url: "/brands/protectix-plus" },
+          { name: "SHIELDON", url: "/Brands/Shieldon" },
+          { name: "SHIELDON+", url: "/brands/shieldon-plus" },
         ],
       },
       {
         name: "Ceramic Non-Stick",
         items: [
-          { name: "Ceragreen", url: "/brands/ceragreen" },
-          { name: "Ceratough", url: "/brands/Ceratough" },
+          { name: "CERAGREEN", url: "/brands/ceragreen" },
+          { name: "CERATOUGH", url: "/brands/Ceratough" },
+        ],
+      },
+      {
+        name: "Roller Coatings",
+        items: [
+          { name: "STONSHILD", url: "/brands/stonshild" },
         ],
       },
     ],
@@ -36,14 +42,14 @@ export const categories = [
       {
         name: "Houseware",
         items: [
-          { name: "Protectix (1 LAYER)", url: "/Brands/protectixone" },
+          { name: "PROTECTIX", url: "/Brands/protectixone" },
         ],
       },
       {
         name: "Industrial",
         items: [
-          { name: "Protectix+ (2 LAYER)", url: "/brands/protectix-plus" },
-          { name: "Shieldon+ (3 LAYER)", url: "/brands/shieldon-plus" },
+          { name: "PROTECTIX+", url: "/brands/protectix-plus" },
+          { name: "SHIELDON+", url: "/brands/shieldon-plus" },
           { name: "PFA POWDER", url: "/brands/pfapowder" },
         ],
       },
@@ -60,8 +66,8 @@ export const categories = [
       {
         name: "PTFE NON-STICK",
         items: [
-          { name: "Protectix (1 LAYER)", url: "/Brands/protectixone" },
-          { name: "Protectix+ (2 LAYER)", url: "/brands/protectix-plus" },
+          { name: "PROTECTIX", url: "/Brands/protectixone" },
+          { name: "PROTECTIX+", url: "/brands/protectix-plus" },
         ],
       },
       {
@@ -72,34 +78,38 @@ export const categories = [
       },
     ],
   },
-  {
-    name: "Roller Coatings",
-    url: "/products/roller-coatings",
-    subCategories: [
-      {
-        name: "Stonshild",
-        url: "/brands/stonshild",
-      },
-    ],
-  },
+  // {
+  //   name: "Roller Coatings",
+  //   url: "/products/roller-coatings",
+  //   subCategories: [
+  //     {
+  //       name: "STONSHILD",
+  //       url: "/brands/stonshild",
+  //     },
+  //   ],
+  // },
   {
     name: "Decorative Coatings",
     url: "/products/decorative-coatings",
     subCategories: [
       {
+        name: "Cookware Exterior",
+        url: "/products/cookware-exterior",
+      },
+      {
         name: "Soft Touch Coatings",
         url: "/products/soft-touch-coatings",
       },
       {
-        name: "Cookware Exterior",
-        url: "/products/cookware-exterior",
-      },
+        name: "Bottle Coatings",
+        url: "/products/bottle-coatings",
+      },      
     ],
   },
-  {
-    name: "Bottle Coatings",
-    url: "/products/bottle-coatings",
-  },
+  // {
+  //   name: "Bottle Coatings",
+  //   url: "/products/bottle-coatings",
+  // },
   {
     name: "UV/LED Curable Coatings",
     url: "/products/uv-led-coatings",

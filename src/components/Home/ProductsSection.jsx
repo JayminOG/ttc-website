@@ -40,7 +40,7 @@ const ProductsSection = () => {
             TTC is a dynamic innovation hub specializing in next-generation coating solutions.<br />
             Our foundation is built on deep industry insight and a vision to redefine performance standards.<br />
             We specialize in high-performance coatings solutions for every application like cookware, bakeware,
-            electrical appliances, automotive, wood, decorative furniture and tailored coatings solutions.
+            electrical appliances, automotive, decorative furniture and tailored coatings solutions.
           </p>
         </div>
         {/* HEADING */}
