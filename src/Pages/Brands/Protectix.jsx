@@ -3,7 +3,7 @@ import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 const productImg = "/brands/protectix.png";
 const protectixLogo = "/brands/protectixLogo.png";
-const Heroimg = "/about/protectix1.png";
+const Heroimg = "/brands/protectix1.png";
 
 const Protectix = () => {
   return (
