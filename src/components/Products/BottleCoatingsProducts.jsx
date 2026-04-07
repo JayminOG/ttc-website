@@ -2,7 +2,7 @@ import React from "react";
 import CoatingCard from "./CoatingCard";
 
 // Import local images
-import img1 from "../../../public/products/heat-resistan.png";
+import img1 from "../../../public/products/BottleCoatings2.png";
 import { TitleHeading } from "../UI";
 
 const BottleCoatingsProducts = () => {

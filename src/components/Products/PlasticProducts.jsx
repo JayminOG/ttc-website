@@ -2,7 +2,11 @@ import React from "react";
 import CoatingCard from "./CoatingCard";
 
 // Import local images
-import img1 from "../../../public/products/heat-resistan.png";
+import img1 from "../../../public/products/UV&LEDCurableTopcoats.png";
+import img2 from "../../../public/products/UVBasecoat&Topcoat.png";
+import img3 from "../../../public/products/UV&LEDCoatingsforLightingReflectors.png";
+import img4 from "../../../public/products/UVCurable&ThermalbaseAnti-ScratchHardcoat.png";
+import img5 from "../../../public/products/PUpaintforplastic.png";
 import { TitleHeading } from "../UI";
 
 const PlasticProducts = () => {
@@ -30,7 +34,7 @@ const PlasticProducts = () => {
     },
     {
       number: 2,
-      image: img1,
+      image: img2,
       title: "UV Basecoat & Topcoat for PVD (Aluminium Evaporation | Vacuum Metallizing)",
       description: (
         <>
@@ -51,7 +55,7 @@ const PlasticProducts = () => {
     },
     {
       number: 3,
-      image: img1,
+      image: img3,
       title: "UV & LED Coatings for Lighting Reflectors",
       description: (
         <>
@@ -70,7 +74,7 @@ const PlasticProducts = () => {
     },
     {
       number: 4,
-      image: img1,
+      image: img4,
       title: "UV Curable & Thermal base Anti-Scratch Hard coat",
       description: (
         <>
@@ -91,7 +95,7 @@ const PlasticProducts = () => {
     },
     {
       number: 5,
-      image: img1,
+      image: img5,
       title: "PU paint for plastic",
       description: (
         <>

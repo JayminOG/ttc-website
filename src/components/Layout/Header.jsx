@@ -82,7 +82,7 @@ const Header = () => {
     { label: "Products", to: "/products" },
     { label: "Brands", to: "/brands" },
     { label: "Gallery", to: "/gallery" },
-    { label: "Blog", to: "/blog" },
+    // { label: "Blog", to: "/blog" },
     { label: "FAQs", to: "/faqs" },
     { label: "Contact Us", to: "/contact" },
   ];

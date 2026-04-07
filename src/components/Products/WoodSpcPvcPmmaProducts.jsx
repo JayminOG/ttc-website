@@ -2,7 +2,9 @@ import React from "react";
 import CoatingCard from "./CoatingCard";
 
 // Import local images
-import img1 from "../../../public/products/heat-resistan.png";
+import img1 from "../../../public/products/UVCurableCoatingsforwoodsurfaces.png";
+import img2 from "../../../public/products/UVCoatingstopcoat forAcrylicPMMAPETGPVCsurfaces.png";
+import img3 from "../../../public/products/UVCurableCoatingsforFloorings.png";
 import { TitleHeading } from "../UI";
 
 const WoodSpcPvcPmmaProducts = () => {
@@ -31,7 +33,7 @@ const WoodSpcPvcPmmaProducts = () => {
     },
     {
       number: 2,
-      image: img1,
+      image: img2,
       title: "UV Coatings top coat for Acrylic/PMMA/PETG/PVC surfaces",
       description: (
         <>
@@ -57,7 +59,7 @@ const WoodSpcPvcPmmaProducts = () => {
     },
     {
       number: 3,
-      image: img1,
+      image: img3,
       title: "UV Curable Coatings for Floorings",
       description: (
         <>

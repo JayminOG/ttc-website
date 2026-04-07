@@ -2,7 +2,11 @@ import React from "react";
 import CoatingCard from "./CoatingCard";
 
 // Import local images
-import img1 from "../../../public/products/heat-resistan.png";
+import img1 from "../../../public/products/ANTI-GRAFFITYCOATINGSFORMETAL&PLASTIC.png";
+import img2 from "../../../public/products/ANTI-FINGERPRINTCOATINGSFORMETAL&PLASTIC.png";
+import img3 from "../../../public/products/PTFEFASTNERSCOATINGS.png";
+import img4 from "../../../public/products/ANT-SCALECOATINGS.png";
+import img5 from "../../../public/products/PTFEMOLDRELEASECOATINGS.png";
 import { TitleHeading } from "../UI";
 
 const SpecialityCoatingsProducts = () => {
@@ -38,7 +42,7 @@ const SpecialityCoatingsProducts = () => {
     },
     {
       number: 2,
-      image: img1,
+      image: img2,
       title: "ANTI-GRAFFITY COATINGS FOR METAL & PLASTIC",
       description: (
         <>
@@ -63,7 +67,7 @@ const SpecialityCoatingsProducts = () => {
     },
     {
       number: 3,
-      image: img1,
+      image: img3,
       title: "PTFE FASTNERS COATINGS",
       description: (
         <>
@@ -88,7 +92,7 @@ const SpecialityCoatingsProducts = () => {
     },
     {
       number: 4,
-      image: img1,
+      image: img4,
       title: "ANT-SCALE COATINGS",
       description: (
         <>
@@ -115,7 +119,7 @@ const SpecialityCoatingsProducts = () => {
     },
     {
       number: 5,
-      image: img1,
+      image: img5,
       title: "PTFE MOLD RELEASE COATINGS",
       description: (
         <>
