@@ -1,7 +1,7 @@
 import React from "react";
 import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
-import productImg from "../../../public/brands/ceratough.png";
+import productImg from "../../../public/brands/CERATOUGH2.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
 const Heroimg = "/brands/CERATOUGH1.png";
 
@@ -36,7 +36,7 @@ const ceratough = () => {
           "Substrate – Aluminium – Rolled/Forged/Cast – Stainless Steel",
         ]}
         image={productImg}
-        logo={protectixLogo}
+        // logo={protectixLogo}
       />
     </main>
   );

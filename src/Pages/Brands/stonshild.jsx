@@ -1,7 +1,7 @@
 import React from "react";
 import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
-import productImg from "../../../public/brands/stonshild.png";
+import productImg from "../../../public/brands/STONSHILD2.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
 const Heroimg = "/brands/STONSHILD1.png";
 
@@ -37,7 +37,7 @@ Built on advanced multi-pass roller coating technology, STONSHILD™ ensures pre
           "Substrate – Aluminium - Rolled",
         ]}
         image={productImg}
-        logo={protectixLogo}
+        // logo={protectixLogo}
       />
     </main>
   );

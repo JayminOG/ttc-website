@@ -1,7 +1,7 @@
 import React from "react";
 import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
-import productImg from "../../../public/brands/shieldon.png";
+import productImg from "../../../public/brands/SHIELDON2.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
 const Heroimg = "/brands/Shieldon1.png";
 
@@ -36,7 +36,7 @@ const Shieldon = () => {
           "Substrate – Aluminium - Rolled/Forged/Cast – Steel",
         ]}
         image={productImg}
-        logo={protectixLogo}
+        // logo={protectixLogo}
       />
     </main>
   );

@@ -34,7 +34,7 @@ const PfaPowder = () => {
         "Substrate – Sheet metal",
       ]}
       image={productImg}
-      logo={protectixLogo}
+      // logo={protectixLogo}
     />
     </main>
   );
