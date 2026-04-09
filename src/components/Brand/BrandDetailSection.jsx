@@ -32,6 +32,57 @@ const imageAnim = {
   },
 };
 
+/* ------------------ Star Rating Component ------------------ */
+const StarRating = ({ total = 5, filled = 0 }) => {
+  return (
+    <div className="flex items-center gap-0.5">
+      {Array.from({ length: total }).map((_, i) => {
+        const full = i < Math.floor(filled);
+        const half = !full && i < filled;
+        return (
+          <svg
+            key={i}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            className="w-4 h-4"
+            fill="none"
+            stroke="#FFA500"
+            strokeWidth={1.5}
+          >
+            <defs>
+              <linearGradient id={`half-${i}`}>
+                <stop offset="50%" stopColor="#FFA500" />
+                <stop offset="50%" stopColor="transparent" />
+              </linearGradient>
+            </defs>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill={full ? "#FFA500" : half ? `url(#half-${i})` : "none"}
+              d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.601a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+            />
+          </svg>
+        );
+      })}
+    </div>
+  );
+};
+
+/* ------------------ Helper: Parse App Item ------------------ */
+const parseAppItem = (app) => {
+  // Matches: "Non-stick effect – 4 star" or "Non-stick effect - 4 stars"
+  const starMatch = app.match(/^(.*?)[–\-]\s*(\d+(?:\.\d+)?)\s*stars?$/i);
+if (starMatch) {
+  return {
+    label: starMatch[1].trim(),
+    type: "star",
+    filled: parseFloat(starMatch[2]),
+    total: 5,
+  };
+}
+  return { label: app, type: "text" };
+};
+
 /* ------------------ Image Slideshow ------------------ */
 const ImageSlideshow = ({ images, heading }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,14 +92,13 @@ const ImageSlideshow = ({ images, heading }) => {
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [images]);
 
   if (!images || images.length === 0) return null;
 
-  // Single image fallback (no slideshow needed)
   if (images.length === 1) {
     return (
       <img
@@ -81,9 +131,7 @@ const ImageSlideshow = ({ images, heading }) => {
             key={idx}
             onClick={() => setCurrentIndex(idx)}
             className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              idx === currentIndex
-                ? "bg-white scale-125"
-                : "bg-white/50"
+              idx === currentIndex ? "bg-white scale-125" : "bg-white/50"
             }`}
           />
         ))}
@@ -102,12 +150,10 @@ const BrandDetailSection = ({
   description3,
   benefits = [],
   applications,
-  images = [],   // NEW: array of images
-  image,         // OLD: single image (kept for backward compatibility)
+  images = [],
+  image,
   logo,
 }) => {
-
-  // Support both single image and multiple images
   const imageList = images.length > 0 ? images : image ? [image] : [];
 
   return (
@@ -136,8 +182,7 @@ const BrandDetailSection = ({
           whileInView="visible"
           viewport={{ amount: 0.25, once: false }}
           variants={staggerContainer}
-          className="bg-[#F7F8FE] rounded-xl sm:rounded-2xl lg:rounded-[10px] 
-                     p-5 sm:p-8 lg:p-12"
+          className="bg-[#F7F8FE] rounded-xl sm:rounded-2xl lg:rounded-[10px] p-5 sm:p-8 lg:p-12"
         >
           {/* BRAND TITLE */}
           <motion.h3
@@ -206,15 +251,28 @@ const BrandDetailSection = ({
                     variants={fadeUp}
                     className="bg-[#F7F8FE] rounded-lg p-2 sm:p-3 flex flex-col"
                   >
-                    {applications.map((app, index) => (
-                      <li
-                        key={index}
-                        className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 text-black font-semibold"
-                      >
-                        <span className="w-2 h-2 rounded-full bg-black inline-block flex-shrink-0"></span>
-                        {app}
-                      </li>
-                    ))}
+                    {applications.map((app, index) => {
+                      const parsed = parseAppItem(app);
+                      return (
+                        <li
+                          key={index}
+                          className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 text-black font-semibold"
+                        >
+                          <span className="w-2 h-2 rounded-full bg-black inline-block flex-shrink-0"></span>
+                          {parsed.type === "star" ? (
+                            <span className="flex items-center gap-2">
+                              {parsed.label} –
+                              <StarRating
+                                total={parsed.total}
+                                filled={parsed.filled}
+                              />
+                            </span>
+                          ) : (
+                            app
+                          )}
+                        </li>
+                      );
+                    })}
                   </motion.ul>
                 </>
               )}
@@ -227,7 +285,6 @@ const BrandDetailSection = ({
                   <img src={logo} alt="logo" className="h-30 object-contain" />
                 </div>
               )}
-
               <ImageSlideshow images={imageList} heading={heading} />
             </motion.div>
           </div>
