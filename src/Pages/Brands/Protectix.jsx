@@ -13,6 +13,7 @@ const Protectix = () => {
         tag="PROTECTIX™"
         description="Engineered for value-driven applications, PROTECTIX™ offers an ideal balance between performance, durability, and cost efficiency."
         image={Heroimg}
+        // videoUrls={["https://www.youtube.com/embed/Vn-daczc2Ko"]}
       />
       <BrandDetailSection
         heading="PROTECTIX™"
@@ -34,7 +35,7 @@ const Protectix = () => {
           "Colors – Black",
           "Substrate – Aluminium - Rolled/Forged/Cast",
         ]}
-        image={productImg}
+        images ={[productImg]}
         // logo={protectixLogo}
       />
     </main>
