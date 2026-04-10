@@ -6,6 +6,7 @@ import WhyChooseUs from "../../components/AboutUs/WhyChooseUs";
 import MissionVisionSection from "../../components/AboutUs/MissionVisionSection";
 import CoreValues from "../../components/AboutUs/CoreValues";
 import Heroimg from "../../../public/about/Aboutusbanner.png";
+import mobileHero from "../../../public/about/AboutUsM.png";
 
 const AboutUsPage = () => {
   return (
@@ -15,7 +16,7 @@ const AboutUsPage = () => {
         tag="About Us"
         description="TTC is a dynamic innovation hub specializing in next-generation coating solutions. Although we operate with the agility of a modern startup, our foundation is built on deep industry insight and a vision to redefine performance standards. We specialize in high-performance non-stick and ceramic technologies that improve the quality and longevity of cookware, bakeware, and electrical appliances."
         image={Heroimg}
-        // mobileImage={mobileHero}
+        mobileImage={mobileHero}
         // videoUrls={["https://www.youtube.com/embed/ImeCpsAA47c"]}
       />
       <div className="container">
