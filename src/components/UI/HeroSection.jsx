@@ -131,7 +131,7 @@ const HeroSection = ({
             {isSlider && (
               <>
                 {/* Prev arrow */}
-                {SLIDER_CONFIG.showArrows && (
+                {/* {SLIDER_CONFIG.showArrows && (
                   <button
                     onClick={prevSlide}
                     aria-label="Previous slide"
@@ -139,10 +139,10 @@ const HeroSection = ({
                   >
                     <FaChevronLeft size={16} />
                   </button>
-                )}
+                )} */}
 
                 {/* Next arrow */}
-                {SLIDER_CONFIG.showArrows && (
+                {/* {SLIDER_CONFIG.showArrows && (
                   <button
                     onClick={nextSlide}
                     aria-label="Next slide"
@@ -150,7 +150,7 @@ const HeroSection = ({
                   >
                     <FaChevronRight size={16} />
                   </button>
-                )}
+                )} */}
 
                 {/* Dot indicators */}
                 {SLIDER_CONFIG.showDots && (
