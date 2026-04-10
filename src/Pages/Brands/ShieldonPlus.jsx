@@ -1,9 +1,17 @@
 import React from "react";
 import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
-import productImg from "../../../public/brands/SHIELDON™+2.png";
+import productImg1 from "../../../public/brands/SHIELDON+/Key-Benefits-Shieldon+-1.png";
+import productImg2 from "../../../public/brands/SHIELDON+/Key-Benefits-Shieldon+-2.png";
+import productImg3 from "../../../public/brands/SHIELDON+/Key-Benefits-Shieldon+-3.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
 const Heroimg = "/brands/Shieldon+.png";
+const Heroimg1 = "/brands/SHIELDON+/D-Banner-SHIELDON+1.png";
+const Heroimg2 = "/brands/SHIELDON+/D-Banner-SHIELDON+2.png";
+const Heroimg3 = "/brands/SHIELDON+/D-Banner-SHIELDON+3.png";
+const MHeroimg1 = "/brands/SHIELDON+/M-Banner-SHIELDON+1.png";
+const MHeroimg2 = "/brands/SHIELDON+/M-Banner-SHIELDON+2.png";
+const MHeroimg3 = "/brands/SHIELDON+/M-Banner-SHIELDON+3.png";
 
 const ShieldonPlus = () => {
   return (
@@ -12,7 +20,8 @@ const ShieldonPlus = () => {
         title="3-Layer Premium Non-stick Coatings"
         tag="SHIELDON™+"
         description="SHIELDON™+ represents the highest standard in non-stick technology, a premium 3-layer system engineered for exceptional performance and long-lasting durability."
-        image={Heroimg}
+        image={[Heroimg1 , Heroimg2 , Heroimg3]}
+        mobileImage={[MHeroimg1 , MHeroimg2 , MHeroimg3]}
       />
       <BrandDetailSection
         heading="SHIELDON™+"
@@ -35,7 +44,7 @@ const ShieldonPlus = () => {
           "Colors – various colors option available",
           "Substrate – Aluminium - Rolled/Forged/Cast –  Steel",
         ]}
-        image={productImg}
+        images={[productImg1, productImg2, productImg3]}
         // logo={protectixLogo}
       />
     </main>

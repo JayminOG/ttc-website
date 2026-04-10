@@ -1,9 +1,19 @@
 import React from "react";
 import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
-import productImg from "../../../public/brands/PROTECTIX™2+.png";
+import productImg1 from "../../../public/brands/Protextix+/Key-Benefits-Protectix+-1.png";
+import productImg2 from "../../../public/brands/Protextix+/Key-Benefits-Protectix+-2.png";
+import productImg3 from "../../../public/brands/Protextix+/Key-Benefits-Protectix+-3.png";
+import productImg4 from "../../../public/brands/Protextix+/Key-Benefits-Protectix+-4.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
-const Heroimg = "/brands/Protectix+.png";
+const Heroimg1 = "/brands/Protextix+/D-Banner-Protectix+-1.png";
+const Heroimg2 = "/brands/Protextix+/D-Banner-Protectix+-2.png";
+const Heroimg3 = "/brands/Protextix+/D-Banner-Protectix+-3.png";
+const Heroimg4 = "/brands/Protextix+/D-Banner-Protectix+-4.png";
+const MHeroimg1 = "/brands/Protextix+/M-Banner-Protectix+-1.png";
+const MHeroimg2 = "/brands/Protextix+/M-Banner-Protectix+-2.png";
+const MHeroimg3 = "/brands/Protextix+/M-Banner-Protectix+-3.png";
+const MHeroimg4 = "/brands/Protextix+/M-Banner-Protectix+-4.png";
 
 const ProtectixPlus = () => {
   return (
@@ -12,7 +22,8 @@ const ProtectixPlus = () => {
         title="2-Layer Premium Non-stick Coatings"
         tag="PROTECTIX™+"
         description="PROTECTIX™+ offers the perfect balance of excellent non-stick performance, abrasion resistance, and long-lasting durability."
-        image={Heroimg}
+        image={[Heroimg1 , Heroimg2 , Heroimg3 , Heroimg4]}
+        mobileImage={[MHeroimg1 , MHeroimg2 , MHeroimg3 , MHeroimg4]}
       />
       <BrandDetailSection
       heading="PROTECTIX™ +"
@@ -36,7 +47,7 @@ const ProtectixPlus = () => {
         "Colors – various colors option available",
         "Substrate – Aluminium - Rolled/Forged/Cast - Steel",
       ]}
-      image={productImg}
+      images={[productImg1, productImg2, productImg3, productImg4]}
       // logo={protectixLogo}
     />
     </main>

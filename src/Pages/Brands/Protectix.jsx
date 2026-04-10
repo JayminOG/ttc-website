@@ -1,9 +1,13 @@
 import React from "react";
 import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
-const productImg = "/brands/PROTECTIX2.png";
+const productImg1 = "/brands/Protextix-2-layer/Key-Benefits-PROTECTIX-L2-1.png";
+const productImg2 = "/brands/Protextix-2-layer/Key-Benefits-PROTECTIX-L2-2.png";
 const protectixLogo = "/brands/protectixLogo.png";
-const Heroimg = "/brands/protectix1.png";
+const Heroimg1 = "/brands/Protextix-2-layer/D-Banner-PROTECTIX-L2-1.png";
+const Heroimg2 = "/brands/Protextix-2-layer/D-Banner-PROTECTIX-L2-2.png";
+const MHeroimg1 = "/brands/Protextix-2-layer/M-Banner-PROTECTIX-L2-1.png";
+const MHeroimg2 = "/brands/Protextix-2-layer/M-Banner-PROTECTIX-L2-2.png";
 
 const Protectix = () => {
   return (
@@ -12,7 +16,8 @@ const Protectix = () => {
         title="2-Layer Ultimate Non-stick Coatings"
         tag="PROTECTIX™"
         description="Engineered for value-driven applications, PROTECTIX™ offers an ideal balance between performance, durability, and cost efficiency."
-        image={Heroimg}
+        image={[Heroimg1 , Heroimg2]}
+        mobileImage={[MHeroimg1 , MHeroimg2]}
         // videoUrls={["https://www.youtube.com/embed/Vn-daczc2Ko"]}
       />
       <BrandDetailSection
@@ -35,7 +40,7 @@ const Protectix = () => {
           "Colors – Black",
           "Substrate – Aluminium - Rolled/Forged/Cast",
         ]}
-        images ={[productImg]}
+        images ={[productImg1, productImg2]}
         // logo={protectixLogo}
       />
     </main>

@@ -1,9 +1,10 @@
 import React from "react";
 import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
-import productImg from "../../../public/brands/STONSHILD2.png";
+import productImg from "../../../public/brands/Shonshild/Key-Benefits-STONSHILD.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
-const Heroimg = "/brands/STONSHILD1.png";
+const Heroimg = "/brands/Shonshild/D-Banner-STONSHILD.png";
+const MHeroimg = "/brands/Shonshild/M-Banner-STONSHILD.png";
 
 const stonshild = () => {
   return (
@@ -13,6 +14,7 @@ const stonshild = () => {
         tag="STONSHILD™"
         description="STONSHILD™ delivers an exceptional balance of reliable performance, excellent non-stick properties, and long-lasting durability for demanding kitchens."
         image={Heroimg}
+        mobileImage={MHeroimg}
       />
       <BrandDetailSection
         heading="STONSHILD™"

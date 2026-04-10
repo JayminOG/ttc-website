@@ -1,9 +1,13 @@
 import React from "react";
 import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
-import productImg from "../../../public/brands/SHIELDON2.png";
+import productImg1 from "../../../public/brands/SHIELDON/Key-Benefits-SHIELDON-1.png";
+import productImg2 from "../../../public/brands/SHIELDON/Key-Benefits-SHIELDON-2.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
-const Heroimg = "/brands/Shieldon1.png";
+const Heroimg1 = "/brands/SHIELDON/D-Banner-SHIELDON-1.png";
+const Heroimg2 = "/brands/SHIELDON/D-Banner-SHIELDON-2.png";
+const MHeroimg1 = "/brands/SHIELDON/M-Banner-SHIELDON-1.png";
+const MHeroimg2 = "/brands/SHIELDON/M-Banner-SHIELDON-2.png";
 
 const Shieldon = () => {
   return (
@@ -12,7 +16,8 @@ const Shieldon = () => {
         title="3-Layer Ultimate Non-stick Coatings"
         tag="SHIELDON™"
         description="SHIELDON™ delivers an exceptional balance of reliable performance, excellent non-stick properties, and long-lasting durability for demanding kitchens."
-        image={Heroimg}
+        image={[Heroimg1 , Heroimg2]}
+        mobileImage={[MHeroimg1 , MHeroimg2]}
       />
       <BrandDetailSection
         heading="SHIELDON™"
@@ -35,7 +40,7 @@ const Shieldon = () => {
           "Colors – various colors option available",
           "Substrate – Aluminium - Rolled/Forged/Cast – Steel",
         ]}
-        image={productImg}
+        images={[productImg1, productImg2]}
         // logo={protectixLogo}
       />
     </main>

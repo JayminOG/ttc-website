@@ -1,9 +1,16 @@
 import React from "react";
 import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
-import productImg from "../../../public/brands/CERAGREEN2.png";
+import productImg1 from "../../../public/brands/Ceragreen/Key-Benefits-CERAGREEN-1.png";
+import productImg2 from "../../../public/brands/Ceragreen/Key-Benefits-CERAGREEN-2.png";
+import productImg3 from "../../../public/brands/Ceragreen/Key-Benefits-CERAGREEN-3.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
-const Heroimg = "/brands/CERAGREEN1.png";
+const Heroimg1 = "/brands/Ceragreen/D-Banner-CERAGREEN-1.png";
+const Heroimg2 = "/brands/Ceragreen/D-Banner-CERAGREEN-2.png";
+const Heroimg3 = "/brands/Ceragreen/D-Banner-CERAGREEN-3.png";
+const MHeroimg1 = "/brands/Ceragreen/M-Banner-CERAGREEN-1.png";
+const MHeroimg2 = "/brands/Ceragreen/M-Banner-CERAGREEN-2.png";
+const MHeroimg3 = "/brands/Ceragreen/M-Banner-CERAGREEN-3.png";
 
 const Ceragreen = () => {
   return (
@@ -12,7 +19,8 @@ const Ceragreen = () => {
         title="Next-Gen Ceramic Non-Stick Coatings"
         tag="CERAGREEN™"
         description="CERAGREEN™ combines advanced sol-gel technology with eco-friendly safety, delivering a premium non-stick solution for modern cookware and appliances."
-        image={Heroimg}
+        image={[Heroimg1 , Heroimg2 , Heroimg3]}
+        mobileImage={[MHeroimg1 , MHeroimg2 , MHeroimg3]}
       />
       <BrandDetailSection
         heading="CERAGREEN™"
@@ -31,7 +39,7 @@ const Ceragreen = () => {
           "Colors – various colors option available",
           "Substrate – Aluminium – Rolled/Forged/Cast – Stainless Steel",
         ]}
-        image={productImg}
+        images={[productImg1, productImg2, productImg3]}
         // logo={protectixLogo}
       />
     </main>
