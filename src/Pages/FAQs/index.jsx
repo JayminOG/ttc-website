@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import { HeroSection, } from "../../components/UI";
 import FAQSection from "../../components/Faq/FAQSection";
+const Heroimg = "/FAQ/FAQs.png";
+const MHeroimg = "/FAQ/M-FAQs.png";
 
 
 const FAQs = () => {
@@ -54,10 +56,12 @@ const FAQs = () => {
         title="Frequently Ask Questions"
         tag="FAQs"
         description="We believe transparency builds trust. Whether you are a manufacturer looking for technical specs or a brand seeking the perfect finish, we have answered the most common questions about our coatings, processes, and safety standards here."
+        image={Heroimg}
+        mobileImage={MHeroimg}
       />
       <FAQSection
         faqData={faqData}
-        buttonText="Load More"
+        // buttonText="Load More"
       />
     </main>
   );

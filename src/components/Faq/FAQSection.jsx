@@ -64,7 +64,7 @@ const FAQSection = ({ faqData = [], buttonText }) => {
       <div className="pt-5">
         <Button
           text={buttonText}
-          onClick={() => (window.location.href = "/")}
+          onClick={() => (window.location.href = "/contact")}
         />
       </div>
     </section>
