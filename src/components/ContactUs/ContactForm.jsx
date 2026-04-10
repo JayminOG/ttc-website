@@ -27,6 +27,13 @@ const fadeUp = {
 };
 
 const ContactForm = () => {
+  const socialLinks = [
+    { icon: LinkedIn, link: "https://www.linkedin.com/company/t-t-c-pvt-ltd/posts/?feedView=all" },
+    { icon: FB, link: "https://www.facebook.com/profile.php?id=61587675127752" },
+    // { icon: Google, link: "https://g.co/yourbusiness" },
+    // { icon: Twitter, link: "https://twitter.com/yourhandle" },
+  ];
+
   return (
     <section className="w-full bg-white flex flex-col items-center py-10">
       <div>
@@ -70,31 +77,34 @@ const ContactForm = () => {
               <div className="flex items-center gap-3 mb-6">
                 <img src={Map} className="w-8 p-2 bg-white rounded-full" alt="location" />
                 <p className="text-gray-200 leading-tight">
-                  123 Industrial Estate, Ahmedabad, Gujarat
+                  TINT TECH COATINGS PVT. LTD., B/H Prakash Petrol Pump, NH-08, Jetalpur, Gujarat 382426.
                 </p>
               </div>
             </div>
 
-            {/* Social Icons Animated */}
+            {/* Social Icons with Links */}
             <motion.div
               className="flex items-center gap-4 mt-6"
               variants={container}
               initial="hidden"
               animate="show"
             >
-              {[FB, LinkedIn, Google, Twitter].map((icon, i) => (
-                <motion.span
+              {socialLinks.map((item, i) => (
+                <motion.a
                   key={i}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   variants={fadeUp}
                   whileHover={{
                     scale: 1.15,
                     rotate: 2,
                     transition: { duration: 0.25 },
                   }}
-                  className="w-10 h-10 shadow bg-gray-900  rounded-full flex justify-center items-center cursor-pointer transition-all duration-300"
+                  className="w-10 h-10 shadow bg-gray-900 rounded-full flex justify-center items-center cursor-pointer transition-all duration-300"
                 >
-                  <img src={icon} className="" />
-                </motion.span>
+                  <img src={item.icon} alt="social" />
+                </motion.a>
               ))}
             </motion.div>
           </div>

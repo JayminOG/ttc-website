@@ -3,6 +3,8 @@ import { HeroSection } from '../../components/UI'
 import ContactForm from '../../components/ContactUs/ContactForm'
 import TestimonialsSlider from '../../components/Home/TestimonialsSlider'
 import LatestBlogsSection from '../../components/Home/LatestBlogsSection'
+const Heroimg = "/contact/contact-hero.png";
+const mobileimage = "/contact/contact-hero-mobile.png";
 
 const ContactUsPage = () => {
   return (
@@ -11,6 +13,8 @@ const ContactUsPage = () => {
         title="Contact the Coating Specialists"
         tag="Contact Us"
         description="Ready to elevate your product's performance? Whether you need a custom formulation, a technical consultation, or a bulk quote, our team is ready to assist. Reach out today and let's start the conversation."
+        image={Heroimg}
+        mobileImage={mobileimage}
       />
       <div className="container">
         <ContactForm />

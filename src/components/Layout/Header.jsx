@@ -19,7 +19,6 @@ import BrandsMegaMenu, { brands } from "./BrandsMegaMenu";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const [openProducts, setOpenProducts] = useState(false);
   const [openBrands, setOpenBrands] = useState(false);
 
@@ -28,6 +27,14 @@ const Header = () => {
   const [expandedSubCategory, setExpandedSubCategory] = useState(null);
 
   const dropdownTimeoutRef = useRef(null);
+
+  // Social links
+  const socialLinks = [
+    { icon: Linkedin, link: "https://www.linkedin.com/company/t-t-c-pvt-ltd/posts/?feedView=all", alt: "LinkedIn" },
+    { icon: Whatsapp, link: "https://wa.me/916396795374", alt: "WhatsApp" },
+    { icon: Mail, link: "mailto:info@ttcpl.com", alt: "Mail" },
+    // { icon: X, link: "https://twitter.com/yourhandle", alt: "X" },
+  ];
 
   // ================= DESKTOP HOVER =================
   const handleEnter = (type) => {
@@ -94,7 +101,7 @@ const Header = () => {
         <div className="flex items-center gap-6 text-sm">
           <div className="flex items-center gap-2">
             <span className="border border-white w-8 h-8 rounded-full flex justify-center items-center">
-              <img src={Gmail} className="w-4" />
+              <img src={Gmail} className="w-4" alt="email" />
             </span>
             <p>info@ttcpl.com</p>
           </div>
@@ -103,20 +110,24 @@ const Header = () => {
 
           <div className="flex items-center gap-2">
             <span className="border border-white w-8 h-8 rounded-full flex justify-center items-center">
-              <img src={Phone} className="w-4" />
+              <img src={Phone} className="w-4" alt="phone" />
             </span>
             <p>+91 63967 95374</p>
           </div>
         </div>
 
         <div className="flex gap-3">
-          {[Linkedin, Whatsapp, Mail, X].map((icon, i) => (
-            <span
+          {socialLinks.map((item, i) => (
+            <a
               key={i}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="border border-white w-8 h-8 rounded-full flex justify-center items-center hover:bg-white transition"
+              aria-label={item.alt}
             >
-              <img src={icon} className="w-4" />
-            </span>
+              <img src={item.icon} className="w-4" alt={item.alt} />
+            </a>
           ))}
         </div>
       </div>
@@ -129,7 +140,7 @@ const Header = () => {
 
         <div className="flex items-center gap-6">
           <Link to="/">
-            <img src={logo} className="h-14" />
+            <img src={logo} className="h-14" alt="logo" />
           </Link>
 
           {/* DESKTOP NAV */}
@@ -244,7 +255,6 @@ const Header = () => {
                   <div className="ml-4 mt-3 flex flex-col gap-3">
                     {categories.map((category, i) => (
                       <div key={i}>
-                        {/* Category with submenus */}
                         {category.subCategories &&
                         category.subCategories.length > 0 ? (
                           <div>
@@ -263,12 +273,10 @@ const Header = () => {
                               />
                             </div>
 
-                            {/* Subcategories */}
                             {expandedCategory === category.name && (
                               <div className="ml-4 mt-2 flex flex-col gap-2">
                                 {category.subCategories.map((subCat, j) => (
                                   <div key={j}>
-                                    {/* Subcategory with items */}
                                     {subCat.items && subCat.items.length > 0 ? (
                                       <div>
                                         <div
@@ -280,8 +288,7 @@ const Header = () => {
                                           <span>{subCat.name}</span>
                                           <IoIosArrowDown
                                             className={`transition-transform ${
-                                              expandedSubCategory ===
-                                              subCat.name
+                                              expandedSubCategory === subCat.name
                                                 ? "rotate-180"
                                                 : ""
                                             }`}
@@ -289,9 +296,7 @@ const Header = () => {
                                           />
                                         </div>
 
-                                        {/* Items */}
-                                        {expandedSubCategory ===
-                                          subCat.name && (
+                                        {expandedSubCategory === subCat.name && (
                                           <div className="ml-4 mt-2 flex flex-col gap-1">
                                             {subCat.items.map((item, k) => (
                                               <NavLink
@@ -300,14 +305,13 @@ const Header = () => {
                                                 onClick={handleMobileMenuClose}
                                                 className="text-sm text-gray-700 hover:text-[#B91E1E] py-1"
                                               >
-                                               {item.name}
+                                                {item.name}
                                               </NavLink>
                                             ))}
                                           </div>
                                         )}
                                       </div>
                                     ) : (
-                                      // Simple subcategory link
                                       <NavLink
                                         to={subCat.url}
                                         onClick={handleMobileMenuClose}
@@ -322,7 +326,6 @@ const Header = () => {
                             )}
                           </div>
                         ) : (
-                          // Category without submenus
                           <NavLink
                             to={category.url}
                             onClick={handleMobileMenuClose}
