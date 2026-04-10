@@ -1,34 +1,33 @@
 import React from "react";
-import galleryImage1 from "../../../public/gallery/galleryImage1.png";
-import galleryImage2 from "../../../public/gallery/galleryImage2.png";
-import galleryImage3 from "../../../public/gallery/galleryImage3.png";
-import galleryImage4 from "../../../public/gallery/galleryImage4.png";
-import galleryImage5 from "../../../public/gallery/galleryImage5.png";
-import galleryImage6 from "../../../public/gallery/galleryImage6.png";
-import galleryImage7 from "../../../public/gallery/galleryImage7.png";
-import galleryImage8 from "../../../public/gallery/galleryImage8.png";
-import galleryImage9 from "../../../public/gallery/galleryImage9.png";
-import galleryImage10 from "../../../public/gallery/galleryImage10.png";
-import galleryImage11 from "../../../public/gallery/galleryImage11.png";
-import galleryImage12 from "../../../public/gallery/galleryImage12.png";
-import galleryImage13 from "../../../public/gallery/galleryImage13.png";
 import TitleHeading from "../UI/TitleHeading";
 import { Button } from "../UI";
 
 const galleryImages = [
-  { id: 1, img: galleryImage8, alt: "Gallery Image 1" }, // tall left
-  { id: 2, img: galleryImage9, alt: "Gallery Image 2" }, // wide top
-  { id: 3, img: galleryImage10, alt: "Gallery Image 3" }, // normal
-  { id: 4, img: galleryImage11, alt: "Gallery Image 4" }, // tall right
-  { id: 5, img: galleryImage13, alt: "Gallery Image 5" }, // wide bottom
-  { id: 6, img: galleryImage12, alt: "Gallery Image 6" }, // normal
+  { id: 1, img: "/gallery/1.png", alt: "Gallery Image 1" },
+  { id: 2, img: "/gallery/2.png", alt: "Gallery Image 2" },
+  { id: 3, img: "/gallery/3.png", alt: "Gallery Image 3" },
+  { id: 4, img: "/gallery/4.png", alt: "Gallery Image 4" },
+  { id: 5, img: "/gallery/5.png", alt: "Gallery Image 5" },
+  { id: 6, img: "/gallery/6.png", alt: "Gallery Image 6" },
+  { id: 7, img: "/gallery/7.png", alt: "Gallery Image 7" },
+  { id: 8, img: "/gallery/8.png", alt: "Gallery Image 8" },
+  { id: 9, img: "/gallery/9.png", alt: "Gallery Image 9" },
+  { id: 10, img: "/gallery/10.png", alt: "Gallery Image 10" },
+  { id: 11, img: "/gallery/11.png", alt: "Gallery Image 11" },
+  { id: 12, img: "/gallery/12.png", alt: "Gallery Image 12" },
+  { id: 13, img: "/gallery/13.png", alt: "Gallery Image 13" },
+  { id: 14, img: "/gallery/14.png", alt: "Gallery Image 14" },
+  { id: 15, img: "/gallery/15.png", alt: "Gallery Image 15" },
+  { id: 16, img: "/gallery/16.png", alt: "Gallery Image 16" },
+  { id: 17, img: "/gallery/17.png", alt: "Gallery Image 17" },
+  { id: 18, img: "/gallery/18.png", alt: "Gallery Image 18" },
+  { id: 19, img: "/gallery/19.png", alt: "Gallery Image 19" },
 ];
 
 const Gallery = () => {
   return (
-    <section className="bg-white py-16 pb-28 lg:pb-20">
-      <div className="mx-auto container">
-        {/* Section Title */}
+    <section className="bg-white py-16 pb-24">
+      <div className="container mx-auto px-4">
         <TitleHeading
           tag="Gallery"
           heading="Surface Finishes Gallery"
@@ -36,119 +35,25 @@ const Gallery = () => {
           text="text-black"
         />
 
-        {/* Masonry Gallery Grid */}
-        <div className="">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-6">
-            {/* LEFT COLUMN */}
-            <div className="flex flex-col gap-4">
-              <div className="group overflow-hidden rounded-xl">
-                <img
-                  src={galleryImage1}
-                  className="w-full h-[180px] sm:h-[240px] md:h-[330px] lg:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-                  alt="gallery1"
-                />
-              </div>
-
-              <div className="group overflow-hidden rounded-xl">
-                <img
-                  src={galleryImage7}
-                  className="w-full h-[180px] sm:h-[240px] md:h-[330px] lg:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-                  alt="gallery2"
-                />
-              </div>
-            </div>
-
-            {/* CENTER COLUMN */}
-            <div className="flex flex-col gap-4">
-              <div className="group overflow-hidden rounded-xl">
-                <img
-                  src={galleryImage2}
-                  className="w-full h-[150px] sm:h-[180px] md:h-[220px] lg:h-[220px] object-cover transition-transform duration-500 group-hover:scale-110"
-                  alt="gallery3"
-                />
-              </div>
-
-              <div className="group overflow-hidden rounded-xl">
-                <img
-                  src={galleryImage4}
-                  className="w-full h-[200px] sm:h-[250px] md:h-[200px] lg:h-[340px] object-cover transition-transform duration-500 group-hover:scale-110"
-                  alt="gallery4"
-                />
-              </div>
-
-              <div className="group overflow-hidden rounded-xl">
-                <img
-                  src={galleryImage6}
-                  className="w-full h-[150px] sm:h-[180px] md:h-[220px] lg:h-[220px] object-cover transition-transform duration-500 group-hover:scale-110"
-                  alt="gallery5"
-                />
-              </div>
-            </div>
-
-            {/* RIGHT COLUMN */}
-            <div className="hidden lg:flex flex-col gap-4">
-              <div className="group overflow-hidden rounded-xl">
-                <img
-                  src={galleryImage3}
-                  className="w-full h-[180px] sm:h-[240px] md:h-[300px] lg:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-                  alt="gallery6"
-                />
-              </div>
-
-              <div className="group overflow-hidden rounded-xl">
-                <img
-                  src={galleryImage5}
-                  className="w-full h-[180px] sm:h-[240px] md:h-[300px] lg:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-                  alt="gallery7"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-7 lg:hidden">
-            <div className="group overflow-hidden rounded-xl">
+        {/* Masonry Layout */}
+        <div className="mt-10 columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+          {galleryImages.map((item) => (
+            <div
+              key={item.id}
+              className="break-inside-avoid overflow-hidden rounded-xl bg-gray-100 shadow-sm"
+            >
               <img
-                src={galleryImage6}
-                className="w-full h-[180px] sm:h-[240px] md:h-[300px] lg:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-                alt="gallery6"
+                src={item.img}
+                alt={item.alt}
+                className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105 block"
               />
             </div>
-
-            <div className="group overflow-hidden rounded-xl">
-              <img
-                src={galleryImage5}
-                className="w-full h-[180px] sm:h-[240px] md:h-[300px] lg:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-                alt="gallery7"
-              />
-            </div>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 auto-rows-[200px] sm:auto-rows-[260px] md:auto-rows-[300px] lg:auto-rows-[340px]">
-            {galleryImages.map((item, index) => (
-              <div
-                key={item.id}
-                className={`relative group overflow-hidden rounded-lg cursor-pointer 
-        ${index === 0 ? "md:row-span-2" : ""}        /* Tall left image */
-        ${index === 1 ? "md:col-span-2" : ""}        /* Wide top-right image */
-        ${index === 2 ? "" : ""}                     /* Normal */
-        ${index === 3 ? "md:row-span-2" : ""}        /* Tall right image */
-        ${index === 4 ? " " : ""}        /* Wide bottom-left image */
-        ${index === 5 ? "" : ""}                     /* Normal */
-      `}
-              >
-                {/* Gallery Image */}
-                <img
-                  src={item.img}
-                  alt={item.alt}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-            ))}
-          </div>
+          ))}
         </div>
 
-        {/* View More Button */}
-        <div className="my-8 sm:mt-10 flex justify-center text-center">
+        {/* <div className="my-8 sm:mt-10 flex justify-center text-center">
           <Button text="View More" className="text-center" />
-        </div>
+        </div> */}
       </div>
     </section>
   );
