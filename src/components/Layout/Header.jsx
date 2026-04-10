@@ -123,7 +123,7 @@ const Header = () => {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-white w-8 h-8 rounded-full flex justify-center items-center hover:bg-white transition"
+              className="border border-white w-8 h-8 rounded-full flex justify-center items-center"
               aria-label={item.alt}
             >
               <img src={item.icon} className="w-4" alt={item.alt} />
