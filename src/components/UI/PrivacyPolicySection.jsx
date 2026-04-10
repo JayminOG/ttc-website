@@ -111,8 +111,8 @@ const PrivacyPolicySection = () => {
           <h2 className="text-xl font-semibold text-black">8. Contact Us</h2>
           <p>
             If you have any questions about this Privacy Policy or how your data is handled, please contact our administrative team:<br />
-            - Email: info@thousandmilestech.com<br />
-            - Address: 123 Industrial Estate, Ahmedabad, Gujarat
+            - Email: info@ttcpl.com<br />
+            - Address: TINT TECH COATINGS PVT. LTD., B/H Prakash Petrol Pump, NH-08, Jetalpur, Gujarat 382426.
           </p>
         </div>
       </div>

@@ -143,7 +143,7 @@ const Footer = () => {
           <ul className="space-y-3 text-gray">
             {[
               { name: "FAQs", link: "/faqs" },
-              { name: "Terms & Conditions", link: "/privacy-policy" },
+              // { name: "Terms & Conditions", link: "/privacy-policy" },
               { name: "Privacy Policy", link: "/privacy-policy" },
             ].map((item, i) => (
               <li

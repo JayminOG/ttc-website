@@ -2,6 +2,7 @@ import React from "react";
 import { HeroSection } from "../../components/UI";
 import MetalProducts from "../../components/Products/MetalProducts";
 const Heroimg = "/products/Metal1.png";
+const MHeroimg = "/products/M-Metal.png";
 
 const Metal = () => {
   return (
@@ -11,6 +12,7 @@ const Metal = () => {
         tag="Metal"
         description="Engineering reliability for the modern home. From rice cookers to sandwich makers, our coatings ensure consistent heat transfer and effortless release."
         image={Heroimg}
+        mobileImage={MHeroimg}
       />
       <MetalProducts/>
     </main>
