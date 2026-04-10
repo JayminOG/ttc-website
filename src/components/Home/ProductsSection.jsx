@@ -2,14 +2,14 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const products = [
-  { id: 1, img: "/Home/Cookware.png",        title: "COOKWARE" },
-  { id: 2, img: "/Home/Backware.png",         title: "BAKEWARE" },
-  { id: 3, img: "/Home/Electrical.png",       title: "ELECTRICAL APPLIANCES" },
-  { id: 4, img: "/Home/Roller-Coatings.png",  title: "ROLLER COATINGS" },
-  { id: 5, img: "/Home/Decorative_.png",      title: "DECORATIVE COATINGS" },
-  { id: 6, img: "/Home/Bottle.png",           title: "BOTTLE COATINGS" },
-  { id: 7, img: "/Home/UV-Led.png",           title: "UV/LED CURABLE COATINGS" },
-  { id: 8, img: "/Home/Speciality.png",       title: "SPECIALITY COATINGS" },
+  { id: 1, img: "/Home/Cookware.png",         title: "COOKWARE" },
+  { id: 2, img: "/Home/bakeware.png",          title: "BAKEWARE" },        // lowercase b
+  { id: 3, img: "/Home/Electrical.png",        title: "ELECTRICAL APPLIANCES" },
+  { id: 4, img: "/Home/Roller-Coatings.png",   title: "ROLLER COATINGS" },
+  { id: 5, img: "/Home/Decorative_.png",       title: "DECORATIVE COATINGS" },
+  { id: 6, img: "/Home/Bottle.png",            title: "BOTTLE COATINGS" },
+  { id: 7, img: "/Home/UV-Led.png",            title: "UV/LED CURABLE COATINGS" },
+  { id: 8, img: "/Home/Speciality.png",        title: "SPECIALITY COATINGS" },  // capital S
 ];
 
 const ProductsSection = () => {
