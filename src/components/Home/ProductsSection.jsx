@@ -1,14 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import cookware from "../../../public/products/cookware.png";
-import bakeware from "../../../public/products/bakeware.png";
-import electrical from "../../../public/products/electrical.png";
-import roller from "../../../public/products/roller.png";
-import decorative from "../../../public/products/decorative.png";
-import bottle from "../../../public/products/bottle.png";
-import uvled from "../../../public/products/uvled.png";
-import specialty from "../../../public/products/specialty.png";
+import cookware from "../../../public/Home/Cookware.png";
+import bakeware from "../../../public/Home/Backware.png";
+import electrical from "../../../public/Home/Electrical.png";
+import roller from "../../../public/Home/Roller-Coatings.png";
+import decorative from "../../../public/Home/Decorative_.png";
+import bottle from "../../../public/Home/Bottle.png";
+import uvled from "../../../public/Home/UV-Led.png";
+import specialty from "../../../public/Home/Speciality.png";
 
 const products = [
   { id: 1, img: cookware, title: "COOKWARE"},
