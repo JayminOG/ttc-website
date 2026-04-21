@@ -2,14 +2,14 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const products = [
-  { id: 1, img: "/Home/cookware.png",        title: "COOKWARE" },           // lowercase c
+  { id: 1, img: "/Home/CookwareFinal.png",        title: "COOKWARE" },           // lowercase c
   { id: 2, img: "/Home/bakeware.png",         title: "BAKEWARE" },           // lowercase b
   { id: 3, img: "/Home/electrical.png",       title: "ELECTRICAL APPLIANCES" }, // lowercase e
   { id: 4, img: "/Home/Roller-Coatings.png",  title: "ROLLER COATINGS" },
   { id: 5, img: "/Home/Decorative_.png",      title: "DECORATIVE COATINGS" },
   { id: 6, img: "/Home/Bottle.png",           title: "BOTTLE COATINGS" },
   { id: 7, img: "/Home/UV-Led.png",           title: "UV/LED CURABLE COATINGS" },
-  { id: 8, img: "/Home/Speciality.png",       title: "SPECIALITY COATINGS" },
+  { id: 8, img: "/Home/SpecialityFinal.png",       title: "SPECIALITY COATINGS" },
 ];
 
 const ProductsSection = () => {
