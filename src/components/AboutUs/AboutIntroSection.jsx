@@ -76,7 +76,7 @@ const AboutIntroSection = ({ hidden }) => {
 
           {/* PARAGRAPH 1 */}
           <motion.p variants={smoothFadeUp} className="text-gray mt-5 leading-relaxed text-justify">
-            TTC is a dynamic and innovative startup specializing in cutting-edge coating solutions across a wide range of industries. Founded with a vision to deliver performance-driven and reliable surface technologies, TTC is committed to meeting the evolving demands of modern manufacturing.
+            TTC is a dynamic and innovative specializing in cutting-edge coating solutions across a wide range of industries. Founded with a vision to deliver performance-driven and reliable surface technologies, TTC is committed to meeting the evolving demands of modern manufacturing.
           </motion.p>
 
           {/* PARAGRAPH 2 */}
