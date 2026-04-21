@@ -4,10 +4,10 @@ import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 import productImg1 from "../../../public/brands/Ceratough/Key-Benefits-CERATOUGH-1.png";
 import productImg2 from "../../../public/brands/Ceratough/Key-Benefits-CERATOUGH-2.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
-const Heroimg1 = "/brands/Ceratough/D-Banner-CERATOUGH-1.png";
-const Heroimg2 = "/brands/Ceratough/D-Banner-CERATOUGH-2.png";
-const MHeroimg1 = "/brands/Ceratough/M-Banner-CERATOUGH-1.png";
-const MHeroimg2 = "/brands/Ceratough/M-Banner-CERATOUGH-2.png";
+const Heroimg1 = "/brands/Ceratough/D-Banner-CERATOUGH-3.png";
+const Heroimg2 = "/brands/Ceratough/D-Banner-CERATOUGH-4.png";
+const MHeroimg1 = "/brands/Ceratough/M-Banner-CERATOUGH-3.png";
+const MHeroimg2 = "/brands/Ceratough/M-Banner-CERATOUGH-4.png";
 
 const ceratough = () => {
   return (

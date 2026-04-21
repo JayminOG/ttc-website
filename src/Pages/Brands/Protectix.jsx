@@ -4,10 +4,10 @@ import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 const productImg1 = "/brands/Protextix-2-layer/Key-Benefits-PROTECTIX-L2-1.png";
 const productImg2 = "/brands/Protextix-2-layer/Key-Benefits-PROTECTIX-L2-2.png";
 const protectixLogo = "/brands/protectixLogo.png";
-const Heroimg1 = "/brands/Protextix-2-layer/D-Banner-PROTECTIX-L2-1.png";
-const Heroimg2 = "/brands/Protextix-2-layer/D-Banner-PROTECTIX-L2-2.png";
-const MHeroimg1 = "/brands/Protextix-2-layer/M-Banner-PROTECTIX-L2-1.png";
-const MHeroimg2 = "/brands/Protextix-2-layer/M-Banner-PROTECTIX-L2-2.png";
+const Heroimg1 = "/brands/Protextix-2-layer/D-Banner-PROTECTIX-L2-1-1.png";
+const Heroimg2 = "/brands/Protextix-2-layer/D-Banner-PROTECTIX-L2-2-1.png";
+const MHeroimg1 = "/brands/Protextix-2-layer/M-Banner-PROTECTIX-L2-1-1.png";
+const MHeroimg2 = "/brands/Protextix-2-layer/M-Banner-PROTECTIX-L2-2-1.png";
 
 const Protectix = () => {
   return (

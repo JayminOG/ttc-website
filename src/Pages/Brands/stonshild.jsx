@@ -3,8 +3,8 @@ import { HeroSection } from "../../components/UI";
 import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 import productImg from "../../../public/brands/Shonshild/Key-Benefits-STONSHILD.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
-const Heroimg = "/brands/Shonshild/D-Banner-STONSHILD.png";
-const MHeroimg = "/brands/Shonshild/M-Banner-STONSHILD.png";
+const Heroimg = "/brands/Shonshild/D-Banner-STONSHILD-1.png";
+const MHeroimg = "/brands/Shonshild/M-Banner-STONSHILD-1.png";
 
 const stonshild = () => {
   return (

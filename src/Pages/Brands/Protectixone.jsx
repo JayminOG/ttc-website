@@ -5,9 +5,9 @@ import productImg1 from "../../../public/brands/Protectix-1-Layer/Key-Benefits-P
 import productImg2 from "../../../public/brands/Protectix-1-Layer/Key-Benefits-PROTECTIX-L1-2.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
 const Heroimg1 = "/brands/Protectix-1-Layer/D-Banner-PROTECTIX-L1-1.png";
-const Heroimg2 = "/brands/Protectix-1-Layer/D-Banner-PROTECTIX-L1-2.png";
+const Heroimg2 = "/brands/Protectix-1-Layer/D-Banner-PROTECTIX-L1-3.png";
 const MHeroimg1 = "/brands/Protectix-1-Layer/M-Banner-PROTECTIX-L1-1.png";
-const MHeroimg2 = "/brands/Protectix-1-Layer/M-Banner-PROTECTIX-L1-2.png";
+const MHeroimg2 = "/brands/Protectix-1-Layer/M-Banner-PROTECTIX-L1-3.png";
 
 const Protectixone = () => {
   return (

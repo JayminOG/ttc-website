@@ -6,10 +6,10 @@ import productImg2 from "../../../public/brands/Ceragreen/Key-Benefits-CERAGREEN
 import productImg3 from "../../../public/brands/Ceragreen/Key-Benefits-CERAGREEN-3.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
 const Heroimg1 = "/brands/Ceragreen/D-Banner-CERAGREEN-1.png";
-const Heroimg2 = "/brands/Ceragreen/D-Banner-CERAGREEN-2.png";
+const Heroimg2 = "/brands/Ceragreen/D-Banner-CERAGREEN-2-1.png";
 const Heroimg3 = "/brands/Ceragreen/D-Banner-CERAGREEN-3.png";
 const MHeroimg1 = "/brands/Ceragreen/M-Banner-CERAGREEN-1.png";
-const MHeroimg2 = "/brands/Ceragreen/M-Banner-CERAGREEN-2.png";
+const MHeroimg2 = "/brands/Ceragreen/M-Banner-CERAGREEN-2-1.png";
 const MHeroimg3 = "/brands/Ceragreen/M-Banner-CERAGREEN-3.png";
 
 const Ceragreen = () => {

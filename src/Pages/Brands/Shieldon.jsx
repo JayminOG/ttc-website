@@ -4,10 +4,10 @@ import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 import productImg1 from "../../../public/brands/SHIELDON/Key-Benefits-SHIELDON-1.png";
 import productImg2 from "../../../public/brands/SHIELDON/Key-Benefits-SHIELDON-2.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
-const Heroimg1 = "/brands/SHIELDON/D-Banner-SHIELDON-1.png";
-const Heroimg2 = "/brands/SHIELDON/D-Banner-SHIELDON-2.png";
-const MHeroimg1 = "/brands/SHIELDON/M-Banner-SHIELDON-1.png";
-const MHeroimg2 = "/brands/SHIELDON/M-Banner-SHIELDON-2.png";
+const Heroimg1 = "/brands/SHIELDON/D-Banner-SHIELDON-1-1.png";
+const Heroimg2 = "/brands/SHIELDON/D-Banner-SHIELDON-2-1.png";
+const MHeroimg1 = "/brands/SHIELDON/M-Banner-SHIELDON-1-1.png";
+const MHeroimg2 = "/brands/SHIELDON/M-Banner-SHIELDON-2-1.png";
 
 const Shieldon = () => {
   return (

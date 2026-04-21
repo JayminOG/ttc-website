@@ -1,8 +1,8 @@
 import React from "react";
 import { HeroSection } from "../../components/UI";
 import CookwareExteriorProducts from "../../components/Products/CookwareExteriorProducts";
-const Heroimg = "/products/CookwareExterior.png";
-const MHeroimg = "/products/M-Cookware-Exterior.png";
+const Heroimg = "/products/CookwareExterior-1.png";
+const MHeroimg = "/products/M-Cookware-Exterior-1.png";
 
 const CookwareExterior = () => {
   return (
