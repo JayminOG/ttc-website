@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { IoIosArrowDown, IoMdClose } from "react-icons/io";
 
-import logo from "../../../public/header/logo.png";
+import logo from "../../../public/header/TTC_Logo_TM.png";
 
 // SOCIAL IMAGES
 import Gmail from "../../../public/social/gmail.png";
