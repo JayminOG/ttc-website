@@ -1,5 +1,5 @@
 import React from "react";
-const GirlImage = "/about/Thejourney.png";
+const GirlImage = "/about/Thejourney1.png";
 import { Button, TitleHeading } from "../UI";
 import { motion } from "framer-motion";
 
