@@ -14,6 +14,7 @@ import { ScrollUp } from "./components/UI";
 import ProductsPage from "./Pages/Product";
 import BlogPage from "./Pages/Blog";
 import ContactUsPage from "./Pages/ConactUs";
+import CareerPage from "./Pages/Career";
 import BlogDetail from "./components/Blog/BlogDetailsSection";
 import PrivacyPolicyPage from "./Pages/PrivacyPolicy";
 
@@ -97,6 +98,7 @@ function App() {
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog/:id" element={<BlogDetail />} />
           <Route path="contact" element={<ContactUsPage />} />
+          <Route path="Career" element={<CareerPage />} />
           <Route path="faqs" element={<FAQs />} />
           <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
 

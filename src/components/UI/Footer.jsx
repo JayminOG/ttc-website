@@ -142,6 +142,7 @@ const Footer = () => {
           <h4 className="text-[20px] mb-5">Get Help</h4>
           <ul className="space-y-3 text-gray">
             {[
+              { name: "Career", link: "/Career" },
               { name: "FAQs", link: "/faqs" },
               // { name: "Terms & Conditions", link: "/privacy-policy" },
               { name: "Privacy Policy", link: "/privacy-policy" },
