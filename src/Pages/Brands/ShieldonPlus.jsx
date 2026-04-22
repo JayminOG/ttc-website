@@ -20,8 +20,8 @@ const ShieldonPlus = () => {
         title="3-Layer Premium Non-stick Coatings"
         tag="SHIELDON™+"
         description="SHIELDON™+ represents the highest standard in non-stick technology, a premium 3-layer system engineered for exceptional performance and long-lasting durability."
-        image={[Heroimg1 , Heroimg2 , Heroimg3]}
-        mobileImage={[MHeroimg1 , MHeroimg2 , MHeroimg3]}
+        image={[Heroimg3, Heroimg1]}
+        mobileImage={[MHeroimg3 , MHeroimg1]}
       />
       <BrandDetailSection
         heading="SHIELDON™+"
@@ -44,7 +44,7 @@ const ShieldonPlus = () => {
           "Colors – various colors option available",
           "Substrate – Aluminium - Rolled/Forged/Cast –  Steel",
         ]}
-        images={[productImg1, productImg2, productImg3]}
+        images={[productImg1, productImg2]}
         // logo={protectixLogo}
       />
     </main>

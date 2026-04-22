@@ -40,7 +40,7 @@ const CookwareExteriorProducts = () => {
       <div className="pb-20">
         <TitleHeading
           tag="Our Products"
-          heading="COOKWARE EXTERIOR(HTR) COATINGS"
+          heading="COOKWARE EXTERIOR COATINGS"
           align="center"
           text="text-black"
         />

@@ -47,7 +47,7 @@ const ProtectixPlus = () => {
         "Colors – various colors option available",
         "Substrate – Aluminium - Rolled/Forged/Cast - Steel",
       ]}
-      images={[productImg1, productImg2, productImg3, productImg4]}
+      images={[productImg1, productImg3, productImg4]}
       // logo={protectixLogo}
     />
     </main>
