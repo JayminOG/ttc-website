@@ -13,7 +13,7 @@ const SpecialityCoatingsProducts = () => {
   const data = [
     {
       number: 1,
-      image: img1,
+      image: img2,
       title: "ANTI-FINGERPRINT COATINGS FOR METAL & PLASTIC",
       description: (
         <>
@@ -42,7 +42,7 @@ const SpecialityCoatingsProducts = () => {
     },
     {
       number: 2,
-      image: img2,
+      image: img1,
       title: "ANTI-GRAFFITY COATINGS FOR METAL & PLASTIC",
       description: (
         <>
@@ -145,6 +145,39 @@ const SpecialityCoatingsProducts = () => {
     //     { name: "Reduces torque variation & prevents seizing", brand: "PTFE-Based ultra-low friction", coat: "Excellent chemical and corrosion resistance" },
     //   ],
       reverse: false,
+    },
+    {
+      number: 6,
+      image: img5,
+      title: "HEAT RESISTANCE COATINGS FOR GAS BURNERS",
+      description: (
+        <>
+          TTC has developed high-performance coating solutions specifically engineered for gas burners, pan supports, and gas stove accessories. These coatings are based on advanced high-temperature resistant technologies that provide excellent protection against thermal degradation, oxidation, and corrosion while maintaining structural and aesthetic integrity.
+          <br />
+          <br />
+          Our coating systems are designed to withstand direct flame exposure and continuous high-temperature conditions without peeling, cracking, or fading. The formulations deliver enhanced durability, strong substrate adhesion, and long-term operational reliability under repeated heating and cooling cycles.
+          <br />
+          <br />
+          By combining heat resistance with corrosion protection, these coatings improve component lifespan, maintain consistent performance, and reduce maintenance requirements, even in demanding kitchen environments.
+          <br />
+          <br />
+          Key Benefits:
+          <br />
+          · Excellent resistance to high temperatures and direct flame exposure
+          <br />
+          · Superior corrosion and oxidation resistance
+          <br />
+          · Strong adhesion and long-lasting durability
+          <br />
+          · Stable performance under cyclic heating conditions
+          <br />
+          · Premium black finish for enhanced aesthetics and surface protection
+        </>
+      ),
+    //   tableData: [
+    //     { name: "Reduces torque variation & prevents seizing", brand: "PTFE-Based ultra-low friction", coat: "Excellent chemical and corrosion resistance" },
+    //   ],
+      reverse: true,
     },
   ];
 

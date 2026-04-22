@@ -62,15 +62,21 @@ const ContactForm = () => {
               </p>
 
               {/* Phone */}
-              <div className="flex items-center gap-3 mb-6">
+              {/* <div className="flex items-center gap-3 mb-6">
                 <img src={Whatsapp} className="w-8 p-2 bg-white rounded-full" alt="phone" />
                 <p className="text-gray-200">+91 63967 95374</p>
-              </div>
+              </div> */}
 
               {/* Email */}
               <div className="flex items-center gap-3 mb-6">
                 <img src={Mail} className="w-8 p-2 bg-white rounded-full" alt="email" />
                 <p className="text-gray-200">info@ttcpl.com</p>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-center gap-3 mb-6">
+                <img src={Mail} className="w-8 p-2 bg-white rounded-full" alt="email" />
+                <p className="text-gray-200">sales@ttcpl.com</p>
               </div>
 
               {/* Location */}

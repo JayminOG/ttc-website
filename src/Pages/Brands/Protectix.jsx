@@ -4,6 +4,7 @@ import BrandDetailSection from "../../components/Brand/BrandDetailSection";
 const productImg1 = "/brands/Protextix-2-layer/Key-Benefits-PROTECTIX-L2-1.png";
 const productImg2 = "/brands/Protextix-2-layer/Key-Benefits-PROTECTIX-L2-2.png";
 const protectixLogo = "/brands/protectixLogo.png";
+import Logo from "../../../public/about/Logo2.png";
 const Heroimg1 = "/brands/Protextix-2-layer/D-Banner-PROTECTIX-L2-1-1.png";
 const Heroimg2 = "/brands/Protextix-2-layer/D-Banner-PROTECTIX-L2-2-1.png";
 const MHeroimg1 = "/brands/Protextix-2-layer/M-Banner-PROTECTIX-L2-1-1.png";
@@ -23,6 +24,7 @@ const Protectix = () => {
       <BrandDetailSection
         heading="PROTECTIX™"
         BrandHeading="2-Layer Ultimate Non-stick Coatings"
+        logo={Logo}
         description="PROTECTIX™ is a 2-layers non-stick coating system designed to deliver excellent performance at an affordable cost, without compromising on quality or reliability. PROTECTIX™ offers an ideal balance between performance, durability, and cost efficiency."
         benefits={[
           "Outstanding Non-Stick Performance",
@@ -34,11 +36,12 @@ const Protectix = () => {
         applications={[
           "Number of Layers - 2 Coat",
           "Material – PTFE",
-          "Non-stick effect – 4 star",
-          "Abrasion – 05k+",
-          "Coatings thickness - ",
-          "Colors – Black",
-          "Substrate – Aluminium - Rolled/Forged/Cast",
+          "Non-stick effect – 5 star",
+          "Abrasion – 5 star",
+          "Coatings thickness – 25-35 µm",
+          "Color – Options available",
+          "Ideal for – Cookware, Electrical appliances",
+          "Substrate - Aluminium - Rolled/Forged/Cast\nStainless Steel\nMS"
         ]}
         images ={[productImg1, productImg2]}
         // logo={protectixLogo}

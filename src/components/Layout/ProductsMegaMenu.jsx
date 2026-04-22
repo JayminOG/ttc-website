@@ -29,6 +29,14 @@ export const categories = [
           { name: "STONSHILD", url: "/brands/stonshild" },
         ],
       },
+      {
+        name: "Cookware Exterior",
+        url: "/products/cookware-exterior",
+      },
+      {
+        name: "Soft Touch Coatings",
+        url: "/products/soft-touch-coatings",
+      },
     ],
   },
   // {
@@ -39,20 +47,23 @@ export const categories = [
     name: "Bakeware",
     url: "/products/bakeware",
     subCategories: [
-      {
-        name: "Houseware",
-        items: [
-          { name: "PROTECTIX", url: "/Brands/protectixone" },
-        ],
-      },
-      {
-        name: "Industrial",
-        items: [
-          { name: "PROTECTIX+", url: "/brands/protectix-plus" },
-          { name: "SHIELDON+", url: "/brands/shieldon-plus" },
-          { name: "PFA POWDER", url: "/brands/pfapowder" },
-        ],
-      },
+      { name: "PROTECTIX", url: "/Brands/protectixone" },
+      { name: "PROTECTIX+", url: "/brands/protectix-plus" },
+      { name: "SHIELDON+", url: "/brands/shieldon-plus" },
+      // {
+      //   name: "Houseware",
+      //   items: [
+      //     { name: "PROTECTIX", url: "/Brands/protectixone" },
+      //   ],
+      // },
+      // {
+      //   name: "Industrial",
+      //   items: [
+      //     { name: "PROTECTIX+", url: "/brands/protectix-plus" },
+      //     { name: "SHIELDON+", url: "/brands/shieldon-plus" },
+      //     { name: "PFA POWDER", url: "/brands/pfapowder" },
+      //   ],
+      // },
     ],
   },
   // {
@@ -88,28 +99,28 @@ export const categories = [
   //     },
   //   ],
   // },
-  {
-    name: "Decorative Coatings",
-    url: "/products/decorative-coatings",
-    subCategories: [
-      {
-        name: "Cookware Exterior",
-        url: "/products/cookware-exterior",
-      },
-      {
-        name: "Soft Touch Coatings",
-        url: "/products/soft-touch-coatings",
-      },
-      {
-        name: "Bottle Coatings",
-        url: "/products/bottle-coatings",
-      },      
-    ],
-  },
   // {
-  //   name: "Bottle Coatings",
-  //   url: "/products/bottle-coatings",
+  //   name: "Decorative Coatings",
+  //   url: "/products/decorative-coatings",
+  //   subCategories: [
+  //     {
+  //       name: "Cookware Exterior",
+  //       url: "/products/cookware-exterior",
+  //     },
+  //     {
+  //       name: "Soft Touch Coatings",
+  //       url: "/products/soft-touch-coatings",
+  //     },
+  //     {
+  //       name: "Bottle Coatings",
+  //       url: "/products/bottle-coatings",
+  //     },      
+  //   ],
   // },
+  {
+    name: "Bottle Coatings",
+    url: "/products/bottle-coatings",
+  },
   {
     name: "UV/LED Curable Coatings",
     url: "/products/uv-led-coatings",

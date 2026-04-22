@@ -32,11 +32,13 @@ Built on advanced multi-pass roller coating technology, STONSHILD™ ensures pre
           "Premium, Long-Lasting Durability",
         ]}
         applications={[
+          "Number of Layers - 2 Coat",
           "Material – PTFE",
           "Non-stick effect – 5 star",
-          "Abrasion – 05k+",
-          "Coatings thickness -",
-          "Colors – various colors option available",
+          "Abrasion – 4 star",
+          "Coatings thickness - 25-35 µm",
+          "Ideal for – Cookware",
+          "Colors – Option available",
           "Substrate – Aluminium - Rolled",
         ]}
         image={productImg}

@@ -110,10 +110,19 @@ const Header = () => {
 
           <div className="flex items-center gap-2">
             <span className="border border-white w-8 h-8 rounded-full flex justify-center items-center">
+              <img src={Gmail} className="w-4" alt="email" />
+            </span>
+            <p>sales@ttcpl.com</p>
+          </div>
+
+          {/* <span className="h-6 w-[1px] bg-gray"></span> */}
+
+          {/* <div className="flex items-center gap-2">
+            <span className="border border-white w-8 h-8 rounded-full flex justify-center items-center">
               <img src={Phone} className="w-4" alt="phone" />
             </span>
             <p>+91 63967 95374</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex gap-3">

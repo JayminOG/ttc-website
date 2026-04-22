@@ -6,6 +6,7 @@ import productImg2 from "../../../public/brands/Protextix+/Key-Benefits-Protecti
 import productImg3 from "../../../public/brands/Protextix+/Key-Benefits-Protectix+-3.png";
 import productImg4 from "../../../public/brands/Protextix+/Key-Benefits-Protectix+-4.png";
 import protectixLogo from "../../../public/brands/protectixLogo.png";
+import Logo from "../../../public/about/Logo3.png";
 const Heroimg1 = "/brands/Protextix+/D-Banner-Protectix+-1.png";
 const Heroimg2 = "/brands/Protextix+/D-Banner-Protectix+-2.png";
 const Heroimg3 = "/brands/Protextix+/D-Banner-Protectix+-3.png";
@@ -28,6 +29,7 @@ const ProtectixPlus = () => {
       <BrandDetailSection
       heading="PROTECTIX™ +"
       BrandHeading="2-Layer Premium Non-stick Coatings"
+      logo={Logo}
       description="PROTECTIX™+ 2-Layers offers the perfect balance of excellent non-stick performance, abrasion resistance, and long-lasting durability. Designed to exceed expectations, this advanced coating system enhances cookware performance while maintaining superior surface integrity over time."
     //  description2="Built on advanced fluoropolymer technology, PROTECTIX™+ delivers exceptional release properties combined with outstanding wear resistance, ensuring reliable performance even under regular use. Its robust formulation makes it an ideal choice for manufacturers seeking premium quality beyond entry-level solutions."
     //  description3="PROTECTIX™+ enables manufacturers to achieve good-quality non-stick finishes while maintaining cost competitiveness—making it a trusted solution for everyday cookware applications."
@@ -41,11 +43,12 @@ const ProtectixPlus = () => {
       applications={[
         "Number of Layers - 2 Coat",
         "Material – PTFE",
-        "Non-stick effect – 4.5 star",
-        "Abrasion – 10k+",
-        "Coatings thickness - ",
-        "Colors – various colors option available",
-        "Substrate – Aluminium - Rolled/Forged/Cast - Steel",
+        "Non-stick effect – 5 star",
+        "Abrasion – 5 star",
+        "Coatings thickness - 25-35 µm",
+        "Colors – Options available",
+        "Ideal for – Cookware, Bakeware, Electrical appliances",
+        "Substrate - Aluminium - Rolled/Forged/Cast\nStainless Steel\nMS"
       ]}
       images={[productImg1, productImg3, productImg4]}
       // logo={protectixLogo}

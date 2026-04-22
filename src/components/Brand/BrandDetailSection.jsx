@@ -129,9 +129,8 @@ const ImageSlideshow = ({ images, heading }) => {
           <button
             key={idx}
             onClick={() => setCurrentIndex(idx)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              idx === currentIndex ? "bg-white scale-125" : "bg-white/50"
-            }`}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === currentIndex ? "bg-white scale-125" : "bg-white/50"
+              }`}
           />
         ))}
       </div>
@@ -264,21 +263,68 @@ const BrandDetailSection = ({
                       return (
                         <li
                           key={index}
-                          className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 text-black font-semibold"
+                          className={`flex gap-2 px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm lg:text-base text-black font-semibold ${app.includes("\n") ? "items-start" : "items-center"
+                            }`}
                         >
-                          <span className="w-2 h-2 rounded-full bg-black inline-block flex-shrink-0"></span>
+                          <span
+                            className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-black flex-shrink-0 ${app.includes("\n") ? "mt-1" : "mt-0"
+                              }`}
+                          ></span>
+
                           {parsed.type === "star" ? (
                             <span className="flex items-center gap-2">
                               {parsed.label} –
-                              <StarRating
-                                total={parsed.total}
-                                filled={parsed.filled}
-                              />
+                              <StarRating total={parsed.total} filled={parsed.filled} />
                             </span>
                           ) : (
-                            app
+                            <div>
+                              {app.split("\n").map((line, i) => (
+                                <div key={i} className={i === 0 ? "" : "ml-20"}>
+                                  {line}
+                                </div>
+                              ))}
+                            </div>
                           )}
                         </li>
+                        // <li
+                        //   key={index}
+                        //   className="flex gap-2 px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm lg:text-base text-black font-semibold"
+                        // >
+                        //   <span className="w-2 h-2 rounded-full bg-black inline-block flex-shrink-0 mt-2"></span>
+
+                        //   {parsed.type === "star" ? (
+                        //     <span className="flex items-center gap-2">
+                        //       {parsed.label} –
+                        //       <StarRating total={parsed.total} filled={parsed.filled} />
+                        //     </span>
+                        //   ) : (
+                        //     // <span className="whitespace-pre-line">{app}</span>
+                        //     <span className="whitespace-pre-line block">
+                        //       {app.split("\n").map((line, i) => (
+                        //         <span key={i} className={i !== 0 ? "block ml-20" : "block"}>
+                        //           {line}
+                        //         </span>
+                        //       ))}
+                        //     </span>
+                        //   )}
+                        // </li>
+                        // <li
+                        //   key={index}
+                        //   className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 text-black font-semibold"
+                        // >
+                        //   <span className="w-2 h-2 rounded-full bg-black inline-block flex-shrink-0"></span>
+                        //   {parsed.type === "star" ? (
+                        //     <span className="flex items-center gap-2">
+                        //       {parsed.label} –
+                        //       <StarRating
+                        //         total={parsed.total}
+                        //         filled={parsed.filled}
+                        //       />
+                        //     </span>
+                        //   ) : (
+                        //     app
+                        //   )}
+                        // </li>
                       );
                     })}
                   </motion.ul>
