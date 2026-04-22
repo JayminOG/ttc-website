@@ -28,7 +28,7 @@ const BrandLogoSection = () => {
               key={i}
               src={logo}
               alt="brand"
-              className="h-10 md:h-10 object-contain opacity- hover:opacity-100 transition"
+              className="h-13 md:h-13 object-contain opacity- hover:opacity-100 transition"
             />
           ))}
         </div>
