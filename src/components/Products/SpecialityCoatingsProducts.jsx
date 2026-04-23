@@ -7,6 +7,7 @@ import img2 from "../../../public/products/ANTI-FINGERPRINTCOATINGSFORMETAL&PLAS
 import img3 from "../../../public/products/PTFEFASTNERSCOATINGS.png";
 import img4 from "../../../public/products/ANT-SCALECOATINGS.png";
 import img5 from "../../../public/products/PTFEMOLDRELEASECOATINGS.png";
+import img6 from "../../../public/products/GasStove.png";
 import { TitleHeading } from "../UI";
 
 const SpecialityCoatingsProducts = () => {
@@ -148,7 +149,7 @@ const SpecialityCoatingsProducts = () => {
     },
     {
       number: 6,
-      image: img5,
+      image: img6,
       title: "HEAT RESISTANCE COATINGS FOR GAS BURNERS",
       description: (
         <>

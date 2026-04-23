@@ -30,7 +30,7 @@ const Ceragreen = () => {
         description="CERAGREEN™ is a premium ceramic non-stick coating designed for cookware, bakeware, and electrical appliances. Developed using advanced sol-gel technology with nano-particle formation, CERAGREEN™ creates a tough, multi-layer ceramic structure that protects surfaces while delivering next-level non-stick release and long-lasting performance."
         benefits={[
           "Advanced Ceramic Non-Stick Performance",
-          "PFAS-Free & Non-Toxic",
+          "PFAS-Free",
           "Premium, Long-Lasting Durability",
         ]}
         applications={[

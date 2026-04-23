@@ -31,7 +31,7 @@ const ceratough = () => {
           "Reinforced Nano-Ceramic Structure",
           "Superior Non-stick release",
           "Excellent abrasion resistance",
-          "PFAS-Free & Non-Toxic",
+          "PFAS-Free",
           "Premium, Long-Lasting Durability",
         ]}
         applications={[

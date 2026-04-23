@@ -26,16 +26,18 @@ const fadeUp = {
   show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
-const ContactForm = () => {
+const CareerForm = () => {
+  const [fileName, setFileName] = useState("No file chosen");
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     phone: "",
     email: "",
     message: "",
+    resume: null,
   });
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // "success" | "error"
 
   const socialLinks = [
     { icon: LinkedIn, link: "https://www.linkedin.com/company/t-t-c-pvt-ltd/posts/?feedView=all" },
@@ -45,48 +47,65 @@ const ContactForm = () => {
   ];
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async () => {
-    // Basic validation
-    if (!formData.firstName || !formData.lastName || !formData.phone || !formData.email || !formData.message) {
-      alert("Please fill in all required fields.");
-      return;
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setFileName(file.name);
+      setFormData((prev) => ({ ...prev, resume: file }));
+    } else {
+      setFileName("No file chosen");
+      setFormData((prev) => ({ ...prev, resume: null }));
     }
+  };
 
-    setLoading(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/info@ttcpl.com", {
+      const data = new FormData();
+      data.append("First Name", formData.firstName);
+      data.append("Last Name", formData.lastName);
+      data.append("Phone Number", formData.phone);
+      data.append("Email", formData.email);
+      data.append("Message", formData.message);
+      if (formData.resume) {
+        data.append("Resume", formData.resume);
+      }
+
+      // FormSubmit hidden config fields
+      data.append("_subject", "New Career Form Submission - TTC");
+      data.append("_captcha", "false");
+      data.append("_template", "table");
+
+      const response = await fetch("https://formsubmit.co/YOUR_EMAIL_HERE", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          name: `${formData.firstName} ${formData.lastName}`,
-          email: formData.email,
-          phone: formData.phone,
-          message: formData.message,
-          _subject: "New Contact Form Submission - Tint Tech Coatings",
-          // Disable captcha (optional, remove if you want captcha)
-          _captcha: "false",
-        }),
+        body: data,
       });
 
-      const result = await response.json();
-
-      if (result.success === "true" || result.success === true) {
-        setSubmitted(true);
-        setFormData({ firstName: "", lastName: "", phone: "", email: "", message: "" });
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          phone: "",
+          email: "",
+          message: "",
+          resume: null,
+        });
+        setFileName("No file chosen");
       } else {
-        alert("Something went wrong. Please try again.");
+        setSubmitStatus("error");
       }
     } catch (error) {
-      alert("Failed to send message. Please check your connection and try again.");
+      setSubmitStatus("error");
     } finally {
-      setLoading(false);
+      setIsSubmitting(false);
     }
   };
 
@@ -94,7 +113,7 @@ const ContactForm = () => {
     <section className="w-full bg-white flex flex-col items-center py-10">
       <div>
         <TitleHeading
-          tag="Contact Us"
+          tag="Career Form"
           heading="Get In Touch With Us"
           align="center"
           text="text-black"
@@ -114,7 +133,7 @@ const ContactForm = () => {
             <div>
               <h2 className="text-xl font-semibold mb-2">Contact Information</h2>
               <p className="text-gray-300 mb-8">
-                Say something to start a conversation. We are here to answer your questions and discuss your coating needs.
+                Start your journey with us. We're excited to learn more about your skills, experience, and career aspirations. Reach out to explore opportunities and become a part of our growing team.
               </p>
 
               {/* Phone */}
@@ -173,109 +192,136 @@ const ContactForm = () => {
 
           {/* RIGHT FORM */}
           <div className="w-full lg:w-[60%] flex flex-col">
+            <form
+              onSubmit={handleSubmit}
+              className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+            >
 
-            {submitted ? (
-              <div className="flex flex-col items-center justify-center h-full text-center py-16">
-                <div className="text-green-500 text-5xl mb-4">✓</div>
-                <h3 className="text-xl font-semibold text-black mb-2">Message Sent!</h3>
-                <p className="text-gray-500">Thank you for reaching out. We'll get back to you shortly.</p>
-                <button
-                  onClick={() => setSubmitted(false)}
-                  className="mt-6 text-sm text-[#A42323] underline"
-                >
-                  Send another message
-                </button>
+              {/* First Name */}
+              <div className="flex flex-col">
+                <label className="text-black text-md font-semibold mb-2">
+                  First Name<span className="text-red-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  required
+                  placeholder="Enter First Name"
+                  className="bg-white border border-gray-300 rounded-full px-4 py-3 placeholder-gray-400 focus:ring-2 focus:ring-[#A42323] outline-none"
+                />
               </div>
-            ) : (
-              <>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-                  {/* First Name */}
-                  <div className="flex flex-col">
-                    <label className="text-black text-md font-semibold mb-2">
-                      First Name<span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="firstName"
-                      value={formData.firstName}
-                      onChange={handleChange}
-                      placeholder="Enter First Name"
-                      className="bg-white border border-gray-300 rounded-full px-4 py-3 placeholder-gray-400 focus:ring-2 focus:ring-[#A42323] outline-none"
-                    />
-                  </div>
+              {/* Last Name */}
+              <div className="flex flex-col">
+                <label className="text-black text-md font-semibold mb-2">
+                  Last Name<span className="text-red-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  required
+                  placeholder="Enter Last Name"
+                  className="bg-white border border-gray-300 rounded-full px-4 py-3 placeholder-gray-400 focus:ring-2 focus:ring-[#A42323] outline-none"
+                />
+              </div>
 
-                  {/* Last Name */}
-                  <div className="flex flex-col">
-                    <label className="text-black text-md font-semibold mb-2">
-                      Last Name<span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="lastName"
-                      value={formData.lastName}
-                      onChange={handleChange}
-                      placeholder="Enter Last Name"
-                      className="bg-white border border-gray-300 rounded-full px-4 py-3 placeholder-gray-400 focus:ring-2 focus:ring-[#A42323] outline-none"
-                    />
-                  </div>
+              {/* Phone */}
+              <div className="flex flex-col">
+                <label className="text-black text-md font-semibold mb-2">
+                  Phone Number<span className="text-red-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                  placeholder="Enter Phone Number"
+                  className="bg-white border border-gray-300 rounded-full px-4 py-3 placeholder-gray-400 focus:ring-2 focus:ring-[#A42323] outline-none"
+                />
+              </div>
 
-                  {/* Phone */}
-                  <div className="flex flex-col">
-                    <label className="text-black text-md font-semibold mb-2">
-                      Phone Number<span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="Enter Phone Number"
-                      className="bg-white border border-gray-300 rounded-full px-4 py-3 placeholder-gray-400 focus:ring-2 focus:ring-[#A42323] outline-none"
-                    />
-                  </div>
+              {/* Email */}
+              <div className="flex flex-col">
+                <label className="text-black text-md font-semibold mb-2">
+                  Email<span className="text-red-500">*</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  placeholder="Enter Email"
+                  className="bg-white border border-gray-300 rounded-full px-4 py-3 placeholder-gray-400 focus:ring-2 focus:ring-[#A42323] outline-none"
+                />
+              </div>
 
-                  {/* Email */}
-                  <div className="flex flex-col">
-                    <label className="text-black text-md font-semibold mb-2">
-                      Email<span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="Enter Email"
-                      className="bg-white border border-gray-300 rounded-full px-4 py-3 placeholder-gray-400 focus:ring-2 focus:ring-[#A42323] outline-none"
-                    />
-                  </div>
-
-                  {/* Message */}
-                  <div className="flex flex-col sm:col-span-2">
-                    <label className="text-black text-md font-semibold mb-2">
-                      Message<span className="text-red-500">*</span>
-                    </label>
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Enter Message"
-                      rows={4}
-                      className="bg-white border border-gray-300 rounded-2xl px-4 py-3 placeholder-gray-400 focus:ring-2 focus:ring-[#A42323] outline-none resize-none"
-                    />
-                  </div>
-                </div>
-
-                {/* Submit Button */}
-                <div className="flex mt-8 justify-center">
-                  <Button
-                    text={loading ? "Sending..." : "Submit"}
-                    onClick={handleSubmit}
-                    disabled={loading}
+              {/* Resume Upload */}
+              <div className="flex flex-col sm:col-span-2">
+                <label className="text-black text-md font-semibold mb-2">
+                  Upload Resume<span className="text-red-500">*</span>
+                </label>
+                <label className="flex items-center gap-4 border border-gray-300 rounded-2xl px-4 py-3 cursor-pointer hover:border-[#A42323] focus-within:ring-2 focus-within:ring-[#A42323] transition-all duration-200">
+                  <span className="bg-[#A42323] text-white text-sm font-medium px-4 py-1.5 rounded-full whitespace-nowrap">
+                    Choose File
+                  </span>
+                  <span className="text-gray-400 text-sm truncate">
+                    {fileName}
+                  </span>
+                  <input
+                    type="file"
+                    accept=".pdf,.doc,.docx"
+                    required
+                    className="hidden"
+                    onChange={handleFileChange}
                   />
+                </label>
+                <p className="text-gray-400 text-xs mt-1 ml-1">Accepted formats: PDF, DOC, DOCX</p>
+              </div>
+
+              {/* Message */}
+              <div className="flex flex-col sm:col-span-2">
+                <label className="text-black text-md font-semibold mb-2">
+                  Message<span className="text-red-500">*</span>
+                </label>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  placeholder="Enter Message"
+                  rows={4}
+                  className="bg-white border border-gray-300 rounded-2xl px-4 py-3 placeholder-gray-400 focus:ring-2 focus:ring-[#A42323] outline-none resize-none"
+                />
+              </div>
+
+              {/* Success / Error Message */}
+              {submitStatus === "success" && (
+                <div className="sm:col-span-2 bg-green-50 border border-green-300 text-green-700 rounded-2xl px-4 py-3 text-sm text-center">
+                  ✅ Your application has been submitted successfully! We'll get back to you soon.
                 </div>
-              </>
-            )}
+              )}
+              {submitStatus === "error" && (
+                <div className="sm:col-span-2 bg-red-50 border border-red-300 text-red-700 rounded-2xl px-4 py-3 text-sm text-center">
+                  ❌ Something went wrong. Please try again or email us directly at info@ttcpl.com
+                </div>
+              )}
+
+              {/* Submit Button */}
+              <div className="sm:col-span-2 flex mt-2 justify-center">
+                <Button
+                  text={isSubmitting ? "Submitting..." : "Submit"}
+                  onClick={handleSubmit}
+                  disabled={isSubmitting}
+                />
+              </div>
+
+            </form>
           </div>
         </div>
       </div>
@@ -283,12 +329,7 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
-
-
-
-
-
+export default CareerForm;
 
 
 
@@ -323,7 +364,7 @@ export default ContactForm;
 //   show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 // };
 
-// const ContactForm = () => {
+// const CareerForm = () => {
 //   const socialLinks = [
 //     { icon: LinkedIn, link: "https://www.linkedin.com/company/t-t-c-pvt-ltd/posts/?feedView=all" },
 //     { icon: FB, link: "https://www.facebook.com/profile.php?id=61587675127752" },
@@ -335,7 +376,7 @@ export default ContactForm;
 //     <section className="w-full bg-white flex flex-col items-center py-10">
 //       <div>
 //         <TitleHeading
-//           tag="Contact Us"
+//           tag="Career Form"
 //           heading="Get In Touch With Us"
 //           align="center"
 //           text="text-black"
@@ -355,7 +396,7 @@ export default ContactForm;
 //             <div>
 //               <h2 className="text-xl font-semibold mb-2">Contact Information</h2>
 //               <p className="text-gray-300 mb-8">
-//                 Say something to start a conversation. We are here to answer your questions and discuss your coating needs.
+//                Start your journey with us. We’re excited to learn more about your skills, experience, and career aspirations. Reach out to explore opportunities and become a part of our growing team.
 //               </p>
 
 //               {/* Phone */}
@@ -491,4 +532,4 @@ export default ContactForm;
 //   );
 // };
 
-// export default ContactForm;
+// export default CareerForm;

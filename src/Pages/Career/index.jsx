@@ -1,10 +1,10 @@
 import React from 'react'
 import { HeroSection } from '../../components/UI'
-import ContactForm from '../../components/ContactUs/ContactForm'
+import CareerForm from '../../components/ContactUs/CareerForm'
 import TestimonialsSlider from '../../components/Home/TestimonialsSlider'
 import LatestBlogsSection from '../../components/Home/LatestBlogsSection'
-const Heroimg = "/contact/contact-hero.png";
-const mobileimage = "/contact/contact-hero-mobile.png";
+const Heroimg = "/contact/Career.png";
+const mobileimage = "/contact/CareerMobile.png";
 
 const CareerPage = () => {
   return (
@@ -17,7 +17,7 @@ const CareerPage = () => {
         mobileImage={mobileimage}
       />
       <div className="container">
-        <ContactForm />
+        <CareerForm />
       </div>
       {/* <TestimonialsSlider /> */}
       {/* <div className="container"> */}
